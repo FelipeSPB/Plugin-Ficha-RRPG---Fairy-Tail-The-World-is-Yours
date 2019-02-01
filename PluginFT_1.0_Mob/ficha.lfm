@@ -1,0 +1,2797 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form formType="sheetTemplate" dataType="br.com.rrpg.FairyTailTheWorldIsYoursM0B" 
+     title="Ft TWIY - MOB" name="frmFTTWYMOB">
+<!-- Abas -->
+
+<tabControl left="2" top="2" width="1200" height="3000">
+                <tab title="Geral">
+                	             <!--Imagem Personagem-->
+                	            <!-- Layout da parte Geral-->
+                	
+                	<flowLayout left="20" top="20" width="1200" height="3000">    
+                		
+
+                		<image align="client" editable="true" field="campoURLImagem" margins="{left=400;bottom=10}" width="200" height="200" style="autoFit"/>
+                		<flowLineBreak/>
+                		<label left="0" top="0" align="left" fontFamily="Copperplate Gothic" text="Link da Imagem: " margins="{left=250;bottom=10}" autoSize="true"/>
+                		<edit left="0" top="0" align="client" fontFamily="Copperplate Gothic" horzTextAlign="leading" width="250" height ="25" field="linkimg"/>
+                		<flowLineBreak/>
+                		   
+                					<!-- Nome -->      
+                		<label left="0" top="0" align="left" fontSize="12" fontFamily="Copperplate Gothic" margins="{left=125;top=20}" text="Nome: " autoSize="true"/>
+                		<edit left="0" top="0" align="client" fontFamily="Copperplate Gothic" horzTextAlign="leading" margins="{top=20}" width="150" height ="25" field="nomepg"/>
+                					
+                					<!--Tipo de Mob-->
+
+                		<label left="0" top="10" align="left" fontFamily="Copperplate Gothic" text="Tipo de Mob:  " margins="{left=125;top=20}" autoSize="true"/>
+                		<comboBox align="client" left="20" top="20" fontFamily="Copperplate Gothic" margins="{top=20}" items="{'N/A','Besta', 'Demônio' ,'Drow', 'Espectro', 'Fada','Gigante','Humano','Humanoides','Insetos','Robôs'}" width="150" field="mob"/>
+                				     <flowLineBreak/>
+                		
+                		     	    <!--Idade-->             
+                		<label left="0" top="10" align="left" fontFamily="Copperplate Gothic" text="Idade: " margins="{left=125;}" autoSize="true"/>
+                		<edit left="0" top="0" align="client" fontFamily="Copperplate Gothic" horzTextAlign="leading" margins="{top=7}" width="50" height ="25" field="idade"/>
+
+                					<!-- Classe -->
+
+                		<label left="0" top="0" align="left" fontFamily="Copperplate Gothic" margins="{left=225;top=7}" text="Classe: " autoSize="true"/>
+                		<comboBox align="client" left="20" top="20" fontFamily="Copperplate Gothic" margins="{top=7}" items="{'N/A','Soldado','Guarda', 'Bárbaro','Campeão','Selvagem','Eremita','Sábio','Batedor','Mago Criador','Mago Sustentador','Mago Emanador','Mago Moldador'}" width="150" field="classe"/>
+                        
+                				<flowLineBreak/>
+                					
+
+                		      	<!--Altura-->             
+                		<label left="0" top="10" align="left" fontFamily="Copperplate Gothic" text="Altura: " margins="{left=125;}" autoSize="true"/>
+                		<edit left="0" top="0" align="client" fontFamily="Copperplate Gothic" horzTextAlign="leading" margins="{top=7}" width="50" height ="25" field="altura"/>
+
+                				<!--HP-->
+                		<label left="0" top="10" align="left" fontFamily="Copperplate Gothic" text="Pontos de Vida: " margins="{left=225;}" autoSize="true"/>
+                		<label left="0" top="10" align="left" fontFamily="Copperplate Gothic" fontColor="#7FFF00" text="Peso: " autoSize="true" field="hp"/>		
+                			<flowLineBreak/>
+                		     	    
+                		     	    <!--Peso-->             
+                		<label left="0" top="10" align="left" fontFamily="Copperplate Gothic" text="Peso: " margins="{left=125;}" autoSize="true"/>
+                		<edit left="0" top="0" align="client" fontFamily="Copperplate Gothic" horzTextAlign="leading" margins="{top=7}" width="50" height ="25" field="peso"/>
+
+                					<!--Mana-->
+                		<label left="0" top="10" align="left" fontFamily="Copperplate Gothic" text="Pontos de Mana: " margins="{left=225;}" autoSize="true"/>
+                		<label left="0" top="10" align="left" fontFamily="Copperplate Gothic" fontColor="#00008B" text="Peso: " autoSize="true" field="mana"/>
+
+
+                			<flowLineBreak/>
+
+                		              <!--Alinhamento-->
+                        <label left="0" top="10" align="left" fontFamily="Copperplate Gothic" text="Alinhamento: " margins="{left=125;}" autoSize="true"/>
+                        <comboBox align="client" left="20" top="20" width="150" margins="{top=7}" fontFamily="Copperplate Gothic" items="{'Lawful Neutral', 'True Neutral', 'Chaotic Neutral', 'Lawful Evil','Neutral Evil','Chaotic Evil'}" field="alinhamento"/>
+ 
+
+                						<!--Classe de Armadura Física -->
+                		<label left="0" top="10" align="left" fontFamily="Copperplate Gothic" text="CAF: " margins="{left=125;}" width="50" />
+                		<label left="0" top="10" fontFamily="Copperplate Gothic" align="client" field="caf"/>				
+
+                		<flowLineBreak/>
+
+                		     <!-- Level -->
+                        <label left="0" top="10" align="left" text="Level: " fontFamily="Copperplate Gothic" margins="{left=125;}" autoSize="true"/>
+                        <comboBox align="client" left="20" top="20" width="150" margins="{top=7}" fontFamily="Copperplate Gothic" items="{'1/8','1/4','1/3','1/2',
+                         '1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29',
+                         '30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56'}" field="level"/>
+                             	    	
+                		
+
+                						<!--Classe de Armadura Mágica-->
+                		<label left="0" top="10" align="left" fontFamily="Copperplate Gothic" margins="{left=125;}" text="CAM: " width="50"/>
+                		<label left="0" top="10" align="client" fontFamily="Copperplate Gothic" autoSize="true" field="cam"/>
+                		
+
+                		     <flowLineBreak/>
+
+                           		 <!-- Pontuação Restante-->
+                		<label left="0" top="10" align="left" text="Pontos Restantes:" fontSize="10" fontFamily="Copperplate Gothic" margins="{left=125;}" autoSize="true"/>
+                		<label left="0" top="10" text="Peso:" align="left" fontFamily="Copperplate Gothic" autoSize="true" field="ptos"/>
+
+              			                		 
+                	</flowLayout>               		          
+              	
+                </tab>
+                <!-- Aba atributos -->
+                <tab title="Atributos">
+                		
+                		<flowLayout left="20" top="20" width="1200" height="3000">    
+                		
+                		<label left="0" top="0" align="left" fontSize="20" fontFamily="Copperplate Gothic" text="ATRIBUTOS" margins="{left=425;bottom=10}" width="150" height="25"/>
+                		<flowLineBreak/>
+                		   
+                					<!-- Ataque Físico -->      
+                		<label left="0" top="0" align="left" text="Ataque Físico: " margins="{top=40}" autoSize="true"/>
+                		<edit left="0" top="0" align="client" horzTextAlign="leading" margins="{top=40}" width="50" height ="25" field="forcafisica"/>
+                		<label left="0" top="0" align="left" text="Bonus Racial: " margins="{left=7;top=40}" width="80"/>
+                		<label left="0" top="0" align="left" text="bonusff" margins="{top=40}" width="20" autoSize="true" field="bonusFF"/>
+                		<label left="0" top="0" align="left" text="Outros Bonus: " margins="{left=7;top=40}" width="100"/>
+                		<edit left="0" top="0" align="client" horzTextAlign="leading" margins="{top=40}" width="50" height ="25" field="OBFF"/>
+                		<label left="0" top="0" align="left" text="TOTAL: " margins="{left=7;top=40}" width="50"/>
+                		<label left="0" top="0" align="left" text="total" margins="{top=40}" width="20" autoSize="true" field="totalFF"/>
+                		<button  margins="{left=10;top=40}" text="Rolar Teste" width="100">
+                			<event name="onClick">
+                           		rolagem = rrpg.interpretarRolagem("1d20"):concatenar((tonumber(sheet.totalFF) or 0));
+                        		local mesaDoPersonagem = rrpg.getMesaDe(sheet);
+                        		mesaDoPersonagem.chat:rolarDados(rolagem, "Teste Dano Físico",
+                        		function (rolado)
+                                mesaDoPersonagem.chat:enviarMensagem("Eu tirei "..rolado.resultado);                                      
+
+                                                                 
+
+                                end);
+                        		
+                			</event>
+        				</button>
+        						<!--HP-->
+                		<label left="0" top="10" align="left" text="Pontos de Vida: " margins="{left=125;top=40}" width="100"/>
+                		<label left="0" top="10" align="left" fontColor="#7FFF00" text="Peso: " margins="{top=40}" autoSize="true" field="hp"/>
+
+	              				     <flowLineBreak/>
+                		     	    <!-- Ataque Mágico -->             
+                		<label left="0" top="0" align="left" text="Ataque Mágico: " autoSize="true"/>
+                		<edit left="0" top="0" align="client" horzTextAlign="leading" margins="{top=7}" width="50" height ="25" field="forcamagica"/>
+                		<label left="0" top="0" align="left" text="Bonus Racial: " margins="{left=7;top=7}" width="80"/>
+                		<label left="0" top="0" align="left" text="bonusfm" margins="{top=7}" width="20" autoSize="true" field="bonusFM"/>
+                		<label left="0" top="0" align="left" text="Outros Bonus: " margins="{left=7;top=7}" width="100"/>
+                		<edit left="0" top="0" align="client" horzTextAlign="leading" margins="{top=7}" width="50" height ="25" field="OBFM"/>
+                		<label left="0" top="0" align="left" text="TOTAL: " margins="{left=7;top=7}" width="50"/>
+                		<label left="0" top="0" align="left" text="total" margins="{top=7}" width="20" autoSize="true" field="totalFM"/>
+                		<button  margins="{left=10;top=7}" text="Rolar Teste" width="100">
+                            <event name="onClick">
+                                rolagem = rrpg.interpretarRolagem("1d20"):concatenar((tonumber(sheet.totalFM) or 0));
+                                local mesaDoPersonagem = rrpg.getMesaDe(sheet);
+                                mesaDoPersonagem.chat:rolarDados(rolagem, "Teste Dano Mágico",
+                                function (rolado)
+                                mesaDoPersonagem.chat:enviarMensagem("Eu tirei "..rolado.resultado);                                      
+                                end);
+                                
+                            </event>
+                        </button>
+
+        							<!--Mana-->
+        				<label left="0" top="10" align="left" text="Pontos de Mana: " margins="{left=125;}" width="100"/>
+                		<label left="0" top="10" align="left" fontColor="#00008B" text="Peso: " autoSize="true" field="mana"/>
+
+                					
+                			<flowLineBreak/>
+                		     	    <!-- Acerto e Iniciativa -->             
+                		<label left="0" top="0" align="left" text="Acerto / Ini: " autoSize="true"/>
+                		<edit left="0" top="0" align="client" horzTextAlign="leading" margins="{top=7}" width="50" height ="25" field="destreza"/>
+                		<label left="0" top="0" align="left" text="Bonus Racial: " margins="{left=7;top=7}" width="80"/>
+                		<label left="0" top="0" align="left" text="bonusdes" margins="{top=7}" width="20" autoSize="true" field="bonusDES"/>
+                		<label left="0" top="0" align="left" text="Outros Bonus: " margins="{left=7;top=7}" width="100"/>
+                		<edit left="0" top="0" align="client" horzTextAlign="leading" margins="{top=7}" width="50" height ="25" field="OBDES"/>
+                		<label left="0" top="0" align="left" text="TOTAL: " margins="{left=7;top=7}" width="50"/>
+                		<label left="0" top="0" align="left" text="total" margins="{top=7}" width="20" autoSize="true" field="totalDES"/>	
+                		<button  margins="{left=10;top=7}" text="Rolar Teste" width="100">
+                            <event name="onClick">
+                                rolagem = rrpg.interpretarRolagem("1d20"):concatenar((tonumber(sheet.totalDES) or 0));
+                                local mesaDoPersonagem = rrpg.getMesaDe(sheet);
+                                mesaDoPersonagem.chat:rolarDados(rolagem, "Teste Iniciativa ou Acerto",
+                                function (rolado)
+                                mesaDoPersonagem.chat:enviarMensagem("Eu tirei "..rolado.resultado);                                      
+                                end);
+                                
+                            </event>
+                        </button>
+
+
+
+                			<flowLineBreak/>
+                		     	    <!-- Inteligência -->             
+                		<label left="0" top="0" align="left" text="Inteligência: " autoSize="true"/>
+                		<edit left="0" top="0" align="client" horzTextAlign="leading" margins="{top=7}" width="50" height ="25" field="inteligencia"/>
+                		<label left="0" top="0" align="left" text="Bonus Racial: " margins="{left=7;top=7}" width="80"/>
+                		<label left="0" top="0" align="left" text="bonusint" margins="{top=7}" width="20" autoSize="true" field="bonusINT"/>
+                		<label left="0" top="0" align="left" text="Outros Bonus: " margins="{left=7;top=7}" width="100"/>
+                		<edit left="0" top="0" align="client" horzTextAlign="leading" margins="{top=7}" width="50" height ="25" field="OBINT"/>
+                		<label left="0" top="0" align="left" text="TOTAL: " margins="{left=7;top=7}" width="50"/>
+                		<label left="0" top="0" align="left" text="total" margins="{top=7}" width="20" autoSize="true" field="totalINT"/>
+                		<label left="0" top="10" align="left" text="Dificuldade:" margins="{left=7;top=7}" width="75" />
+                		<comboBox align="client" left="20" top="20" margins="{top=7}" width="100" items="{'Fácil', 'Médio', 'Difícil', 'Muito Difícil','Heroico'}" field="dificuldadeINT"/>
+                		<button  margins="{left=10;top=7}" text="Rolar Teste" width="100">
+                			<event name="onClick">
+                        		local dificuldade = sheet.dificuldadeINT
+                        		if dificuldade == 'Fácil' then
+                        			dificuldade = 10
+                        		elseif dificuldade == 'Médio' then
+                        			dificuldade = 15
+                        		elseif dificuldade == 'Difícil' then
+                        			dificuldade = 20
+                        		elseif dificuldade == 'Muito Difícil' then
+                        			dificuldade = 25
+                        		elseif dificuldade == 'Heroico' then
+                        			dificuldade = 30
+                        		else
+                        			dificuldade = 0
+                        		end
+                        		
+                        		rolagem = rrpg.interpretarRolagem("1d20"):concatenar((tonumber(sheet.totalINT) or 0));
+                        		local mesaDoPersonagem = rrpg.getMesaDe(sheet);
+                        		mesaDoPersonagem.chat:rolarDados(rolagem, "Teste Inteligência",
+                        		function (rolado)
+                                                                      
+
+                                        if rolado.resultado >= dificuldade then
+                                                mesaDoPersonagem.chat:enviarMensagem(" SUCESSO!  Eu tirei " .. rolado.resultado);
+                                        else
+                                                mesaDoPersonagem.chat:enviarMensagem("...falhei... tirei " .. rolado.resultado);
+                                        end;                                        
+
+                                end);
+                        		
+                			</event>
+        				
+                		</button>
+				       
+
+                			<flowLineBreak/>	
+                		     	    <!-- HP -->             
+                		<label left="0" top="0" align="left" text="Resistência Física: " autoSize="true"/>
+                		<edit left="0" top="0" align="client" horzTextAlign="leading" margins="{top=7}" width="50" height ="25" field="resfisica"/>
+                		<label left="0" top="0" align="left" text="Bonus Racial: " margins="{left=7;top=7}" width="80"/>
+                		<label left="0" top="0" align="left" text="bonusrf" margins="{top=7}" width="20" autoSize="true" field="bonusRF"/>
+                		<label left="0" top="0" align="left" text="Outros Bonus: " margins="{left=7;top=7}" width="100"/>
+                		<edit left="0" top="0" align="client" horzTextAlign="leading" margins="{top=7}" width="50" height ="25" field="OBRF"/>
+                		<label left="0" top="0" align="left" text="TOTAL: " margins="{left=7;top=7}" width="50"/>
+                		<label left="0" top="0" align="left" text="total" margins="{top=7}" width="20" autoSize="true" field="totalRF"/>
+                		<label left="0" top="10" align="left" text="Dificuldade:" margins="{left=7;top=7}" width="75" />
+                		<comboBox align="client" left="20" top="20" margins="{top=7}" width="100" items="{'Fácil', 'Médio', 'Difícil', 'Muito Difícil','Heroico'}" field="dificuldadeRF"/>
+                		<button  margins="{left=10;top=7}" text="Rolar Teste" width="100">
+                			<event name="onClick">
+                        		local dificuldade = sheet.dificuldadeRF
+                        		if dificuldade == 'Fácil' then
+                        			dificuldade = 10
+                        		elseif dificuldade == 'Médio' then
+                        			dificuldade = 15
+                        		elseif dificuldade == 'Difícil' then
+                        			dificuldade = 20
+                        		elseif dificuldade == 'Muito Difícil' then
+                        			dificuldade = 25
+                        		elseif dificuldade == 'Heroico' then
+                        			dificuldade = 30
+                        		else
+                        			dificuldade = 0
+                        		end
+                        		
+                        		rolagem = rrpg.interpretarRolagem("1d20"):concatenar((tonumber(sheet.totalRF) or 0));
+                        		local mesaDoPersonagem = rrpg.getMesaDe(sheet);
+                        		mesaDoPersonagem.chat:rolarDados(rolagem, "Teste Resistência Física",
+                        		function (rolado)
+                                                                      
+
+                                        if rolado.resultado >= dificuldade then
+                                                mesaDoPersonagem.chat:enviarMensagem(" SUCESSO!  Eu tirei " .. rolado.resultado);
+                                        else
+                                                mesaDoPersonagem.chat:enviarMensagem("...falhei... tirei " .. rolado.resultado);
+                                        end;                                        
+
+                                end);
+                        		
+                			</event>
+        				
+                		</button>
+        				   			<flowLineBreak/>
+
+                		     	    <!-- MANA -->             
+                		<label left="0" top="0" align="left" text="Resistência Mágica: " autoSize="true"/>
+                		<edit left="0" top="0" align="client" horzTextAlign="leading" margins="{top=7}" width="50" height ="25" field="resmagica"/>
+                		<label left="0" top="0" align="left" text="Bonus Racial:" margins="{left=7;top=7}" width="80"/>
+                		<label left="0" top="0" align="left" text="bonusrm" margins="{top=7}" width="20" autoSize="true" field="bonusRM"/>
+                		<label left="0" top="0" align="left" text="Outros Bonus:" margins="{left=7;top=7}" width="100"/>
+                		<edit left="0" top="0" align="client" horzTextAlign="leading" margins="{top=7}" width="50" height ="25" field="OBRM"/>
+                		<label left="0" top="0" align="left" text="TOTAL:" margins="{left=7;top=7}" width="50"/>
+                		<label left="0" top="0" align="left" text="total" margins="{top=7}" width="20" field="totalRM"/>
+						<label left="0" top="10" align="left" text="Dificuldade:" margins="{left=7;top=7}" width="75" />
+                		<comboBox align="client" left="20" top="20" margins="{top=7}" width="100" items="{'Fácil', 'Médio', 'Difícil', 'Muito Difícil','Heroico'}" field="dificuldadeRM"/>
+                		<button  margins="{left=10;top=7}" text="Rolar Teste" width="100">
+                			<event name="onClick">
+                        		local dificuldade = sheet.dificuldadeRM
+                        		if dificuldade == 'Fácil' then
+                        			dificuldade = 10
+                        		elseif dificuldade == 'Médio' then
+                        			dificuldade = 15
+                        		elseif dificuldade == 'Difícil' then
+                        			dificuldade = 20
+                        		elseif dificuldade == 'Muito Difícil' then
+                        			dificuldade = 25
+                        		elseif dificuldade == 'Heroico' then
+                        			dificuldade = 30
+                        		else
+                        			dificuldade = 0
+                        		end
+                        		
+                        		rolagem = rrpg.interpretarRolagem("1d20"):concatenar((tonumber(sheet.totalRM) or 0));
+                        		local mesaDoPersonagem = rrpg.getMesaDe(sheet);
+                        		mesaDoPersonagem.chat:rolarDados(rolagem, "Teste Resistência Mágica",
+                        		function (rolado)
+                                                                      
+
+                                        if rolado.resultado >= dificuldade then
+                                                mesaDoPersonagem.chat:enviarMensagem(" SUCESSO!  Eu tirei " .. rolado.resultado);
+                                        else
+                                                mesaDoPersonagem.chat:enviarMensagem("...falhei... tirei " .. rolado.resultado);
+                                        end;                                        
+
+                                end);
+                        		
+                			</event>
+        				
+                		</button>
+
+        				              		
+                		
+                			<flowLineBreak/>
+
+                                    <!-- ADD CAF -->
+                        <label left="0" top="0" align="left" margins="{top=20;left=7}" text="ADD CAF: " width="75"/>   
+                        <edit left="0" top="0" align="client" horzTextAlign="leading" margins="{left=4; top=20}" width="50" height ="25" field="bcaf"/>
+                		               		
+                        <label left="0" top="10" align="left" text="CALCULADORA" margins="{top=10;left=225;}" width="100"/>
+                		
+
+
+
+						<flowLineBreak/>
+
+
+                        <label left="0" top="0" align="left" margins="{top=10;left=7}" text="ADD CAM: " width="75"/>   
+                        <edit left="0" top="0" align="client" horzTextAlign="leading" margins="{left=4; top=10}" width="50" height ="25" field="bcam"/>
+
+                        <!-- Soma -->
+
+                        <edit left="0" top="0" align="client" horzTextAlign="leading" margins="{left=205}" width="50" height ="25" field="Calc1"/>
+                        <label left="0" top="10" align="left" text="+" margins="{left=7;}" width="10"/>
+                        <edit left="0" top="0" align="client" horzTextAlign="leading" margins="{left=7}" width="50" height ="25" field="Calc2"/>
+                        <label left="0" top="10" align="left" text="=" margins="{left=7;}" width="10"/>
+                        <label left="0" top="10" align="left" text="N/A" margins="{left=7;}" width="50" field="result1"/>
+                        <button  margins="{left=10}" text="Calcular" width="100">
+                            <event name="onClick">
+                            	sheet.result1 = (tonumber(sheet.Calc1) or 0) + (tonumber(sheet.Calc2) or 0)
+                            </event>
+                        </button>
+
+
+
+                        <flowLineBreak/>
+
+                        <!-- Subtração -->
+
+                        <edit left="0" top="0" align="client" horzTextAlign="leading" margins="{left=340}" width="50" height ="25" field="Calc3"/>
+                        <label left="0" top="10" align="left" text="-" margins="{left=7;}" width="10"/>
+                        <edit left="0" top="0" align="client" horzTextAlign="leading" margins="{left=7}" width="50" height ="25" field="Calc4"/>
+                        <label left="0" top="10" align="left" text="=" margins="{left=7;}" width="10"/>
+                        <label left="0" top="10" align="left" text="N/A" margins="{left=7;}" width="50" field="result2"/>
+                        <button  margins="{left=10}" text="Calcular" width="100">
+                            <event name="onClick">
+                            	sheet.result2 = (tonumber(sheet.Calc3) or 0) - (tonumber(sheet.Calc4) or 0)
+                            </event>
+                        </button>
+
+
+                        <flowLineBreak/>     
+
+                	</flowLayout>               		          
+              	</tab>
+		        
+
+                <!-- Aba Vantagens -->
+		        <tab title="Vantagens">
+                    <flowLayout left="10" top="10" width="1500" height="3000">    
+                        
+                        <label left="0" top="0" align="left" fontSize="20" fontFamily="Copperplate Gothic" text="VANTAGENS" margins="{left=500;bottom=10}" width="150" height="30"/>
+
+                        <label left="0" top="0" align="left" fontSize="14" text="Pontos Gastos: " margins="{left=200;bottom=10}" width="100"/>
+                        <label left="0" top="0" align="left" fontSize="14" text="totalPtos " margins="{left=5;bottom=10;}" field="TotalVant" width="100"/>
+                        <flowLineBreak/>
+                        
+                        <!--Vantagem 1 -->
+                        <label left="0" top="0" align="left" text="Vantagem:" margins="{top=20}" autoSize="true"/>
+                        <comboBox align="left" width="250" margins="{top=20; right=10}" items="{'N/A','Acerto', 'Alma Gêmea','Ambidestria', 'Ambiente Favorável 1',
+                         'Ambiente Favorável 2',
+                        'Ambiente Favorável 3','Amor Polígamo', 'Amor Verdadeiro', 'Aparência Inofensiva', 'Arma de Fogo 1',
+                         'Arma de Fogo 2', 'Arma de Fogo 3','Bom Senso','Conhecimentos Arcanos', 'Contatos e Aliados 1', 'Contatos e Aliados 2',
+                          'Contatos e Aliados 3', 'Contatos e Aliados 4', 'Coração de Pedra', 'Detectar Magia 1',
+                           'Detectar Magia 2', 'Dívida de Gratidão 1', 'Dívida de Gratidão 2', 'Dívida de Gratidão 3',
+                            'Empatia com Animais','Fama 1','Fama 2','Fama 3','Fama 4', 'Família ou Mentor Honrado', 'Identidade Secreta', 'Improvisador 1',
+                             'Improvisador 2', 'Influência Política/Burocrática 1', 'Influência Política/Burocrática 2',
+                              'Influência Política/Burocrática 3', 'Influência Política/Burocrática 4', 
+                              'Influência Política/Burocrática 5', 'Influência Jurisprudente 1', 'Influência Jurisprudente 2','Influência Jurisprudente 3', 'Influência Jurisprudente 4', 'Influência Jurisprudente 5',
+                              'Influência Eclesiástica 1', 'Influência Eclesiástica 2', 'Influência Eclesiástica 3',
+                              'Influência Eclesiástica 4', 'Influência Eclesiástica 5', 'Influência Econômica 1',
+                               'Influência Econômica 2', 'Influência Econômica 3', 'Influência Econômica 4', 
+                               'Influência Econômica 5', 'Influência Midiática 1', 'Influência Midiática 2', 
+                               'Influência Midiática 3', 'Influência Midiática 4', 'Influência Midiática 5', 'Infravisão',
+                                'Iniciativa Aprimorada', 'Medicina', 'Patrono','Pechincheiro','Pontos de HP Extras', 'Pontos de Mana Extras',
+                                 'Precognição', 'Resistência a Dor', 'Sentidos Aguçados (Visão)', 
+                                 'Sentidos Aguçados (Tato)', 'Sentidos Aguçados (Olfato)', 'Sentidos Aguçados (Paladar)',
+                                  'Sentidos Aguçados (Audição)','Sortudo 1','Sortudo 2', 'Torcida', 'Visão Noturna'}" 
+                                   field="nomeVant"/>
+
+                        <label left="0" top="0" align="left" text="Descrição: " margins="{left=10;top=20}" width="100" autoSize="true"/>
+                        <label left="0" top="0" align="left" text="descricao" margins="{top=20}" autoSize="true" width="500" field="descricaoVant"/>
+                        <label left="0" top="0" align="left" text="Custo: " margins="{top=20}" autoSize="true" width="50"/>
+                        <label left="0" top="0" align="left" text="custo " margins="{top=20}" autoSize="true" width="10" field="custoVant"/>
+                        <flowLineBreak/>
+                        <!--Vantagem 2 -->
+                        <label left="0" top="0" align="left" text="Vantagem:" margins="{top=20}" autoSize="true"/>
+                        <comboBox align="client" left="20" top="20" width="250" margins="{top=20; right=10}" items="{'N/A','Acerto', 'Alma Gêmea','Ambidestria', 'Ambiente Favorável 1', 'Ambiente Favorável 2',
+                        'Ambiente Favorável 3','Amor Polígamo', 'Amor Verdadeiro', 'Aparência Inofensiva', 'Arma de Fogo 1',
+                         'Arma de Fogo 2', 'Arma de Fogo 3','Bom Senso','Conhecimentos Arcanos', 'Contatos e Aliados 1', 'Contatos e Aliados 2',
+                          'Contatos e Aliados 3', 'Contatos e Aliados 4', 'Coração de Pedra', 'Detectar Magia 1',
+                           'Detectar Magia 2', 'Dívida de Gratidão 1', 'Dívida de Gratidão 2', 'Dívida de Gratidão 3',
+                            'Empatia com Animais','Fama 1','Fama 2','Fama 3','Fama 4', 'Família ou Mentor Honrado', 'Identidade Secreta', 'Improvisador 1',
+                             'Improvisador 2', 'Influência Política/Burocrática 1', 'Influência Política/Burocrática 2',
+                              'Influência Política/Burocrática 3', 'Influência Política/Burocrática 4', 
+                              'Influência Política/Burocrática 5', 'Influência Jurisprudente 1', 'Influência Jurisprudente 2','Influência Jurisprudente 3', 'Influência Jurisprudente 4', 'Influência Jurisprudente 5',
+                              'Influência Eclesiástica 1', 'Influência Eclesiástica 2', 'Influência Eclesiástica 3',
+                              'Influência Eclesiástica 4', 'Influência Eclesiástica 5', 'Influência Econômica 1',
+                               'Influência Econômica 2', 'Influência Econômica 3', 'Influência Econômica 4', 
+                               'Influência Econômica 5', 'Influência Midiática 1', 'Influência Midiática 2', 
+                               'Influência Midiática 3', 'Influência Midiática 4', 'Influência Midiática 5', 'Infravisão',
+                                'Iniciativa Aprimorada', 'Medicina', 'Patrono','Pechincheiro','Pontos de HP Extras', 'Pontos de Mana Extras',
+                                 'Precognição', 'Resistência a Dor', 'Sentidos Aguçados (Visão)', 
+                                 'Sentidos Aguçados (Tato)', 'Sentidos Aguçados (Olfato)', 'Sentidos Aguçados (Paladar)',
+                                  'Sentidos Aguçados (Audição)','Sortudo 1','Sortudo 2', 'Torcida', 'Visão Noturna'}" 
+                                   field="nomeVant2"/>
+
+                        <label left="0" top="0" align="left" text="Descrição: " margins="{left=10;top=20}" width="100" autoSize="true"/>
+                        <label left="0" top="0" align="left" text="descricao " margins="{top=20}" autoSize="true" width="500" field="descricaoVant2"/>
+                        <label left="0" top="0" align="left" text="Custo: " margins="{top=20}" autoSize="true" width="50"/>
+                        <label left="0" top="0" align="left" text="custo " margins="{top=20}" autoSize="true" width="10" field="custoVant2"/>
+                         
+                        <flowLineBreak/> [
+
+                        <!--Vantagem 3 -->
+                        <label left="0" top="0" align="left" text="Vantagem:" margins="{top=20}" autoSize="true"/>
+                        <comboBox align="client" left="20" top="20" width="250" margins="{top=20; right=10}" items="{'N/A','Acerto', 'Alma Gêmea','Ambidestria', 'Ambiente Favorável 1', 'Ambiente Favorável 2',
+                        'Ambiente Favorável 3','Amor Polígamo', 'Amor Verdadeiro', 'Aparência Inofensiva', 'Arma de Fogo 1',
+                         'Arma de Fogo 2', 'Arma de Fogo 3','Bom Senso','Conhecimentos Arcanos', 'Contatos e Aliados 1', 'Contatos e Aliados 2',
+                          'Contatos e Aliados 3', 'Contatos e Aliados 4', 'Coração de Pedra', 'Detectar Magia 1',
+                           'Detectar Magia 2', 'Dívida de Gratidão 1', 'Dívida de Gratidão 2', 'Dívida de Gratidão 3',
+                            'Empatia com Animais','Fama 1','Fama 2','Fama 3','Fama 4', 'Família ou Mentor Honrado', 'Identidade Secreta', 'Improvisador 1',
+                             'Improvisador 2', 'Influência Política/Burocrática 1', 'Influência Política/Burocrática 2',
+                              'Influência Política/Burocrática 3', 'Influência Política/Burocrática 4', 
+                              'Influência Política/Burocrática 5', 'Influência Jurisprudente 1', 'Influência Jurisprudente 2','Influência Jurisprudente 3', 'Influência Jurisprudente 4', 'Influência Jurisprudente 5',
+                              'Influência Eclesiástica 1', 'Influência Eclesiástica 2', 'Influência Eclesiástica 3',
+                              'Influência Eclesiástica 4', 'Influência Eclesiástica 5', 'Influência Econômica 1',
+                               'Influência Econômica 2', 'Influência Econômica 3', 'Influência Econômica 4', 
+                               'Influência Econômica 5', 'Influência Midiática 1', 'Influência Midiática 2', 
+                               'Influência Midiática 3', 'Influência Midiática 4', 'Influência Midiática 5', 'Infravisão',
+                                'Iniciativa Aprimorada', 'Medicina', 'Patrono','Pechincheiro','Pontos de HP Extras', 'Pontos de Mana Extras',
+                                 'Precognição', 'Resistência a Dor', 'Sentidos Aguçados (Visão)', 
+                                 'Sentidos Aguçados (Tato)', 'Sentidos Aguçados (Olfato)', 'Sentidos Aguçados (Paladar)',
+                                  'Sentidos Aguçados (Audição)','Sortudo 1','Sortudo 2', 'Torcida', 'Visão Noturna'}" 
+                                   field="nomeVant3"/>
+
+                        <label left="0" top="0" align="left" text="Descrição: " margins="{left=10;top=20}" width="100" autoSize="true"/>
+                        <label left="0" top="0" align="left" text="descricao " margins="{top=20}" autoSize="true" width="500" field="descricaoVant3"/>
+                        <label left="0" top="0" align="left" text="Custo: " margins="{top=20}" autoSize="true" width="50"/>
+                        <label left="0" top="0" align="left" text="custo " margins="{top=20}" autoSize="true" width="10" field="custoVant3"/>
+
+
+                        <flowLineBreak/>
+
+                        <!--Vantagem 4 -->
+                        <label left="0" top="0" align="left" text="Vantagem:" margins="{top=20}" autoSize="true"/>
+                        <comboBox align="client" left="20" top="20" width="250" margins="{top=20; right=10}" items="{'N/A','Acerto', 'Alma Gêmea','Ambidestria', 'Ambiente Favorável 1', 'Ambiente Favorável 2',
+                        'Ambiente Favorável 3','Amor Polígamo', 'Amor Verdadeiro', 'Aparência Inofensiva', 'Arma de Fogo 1',
+                         'Arma de Fogo 2', 'Arma de Fogo 3','Bom Senso','Conhecimentos Arcanos', 'Contatos e Aliados 1', 'Contatos e Aliados 2',
+                          'Contatos e Aliados 3', 'Contatos e Aliados 4', 'Coração de Pedra', 'Detectar Magia 1',
+                           'Detectar Magia 2', 'Dívida de Gratidão 1', 'Dívida de Gratidão 2', 'Dívida de Gratidão 3',
+                            'Empatia com Animais','Fama 1','Fama 2','Fama 3','Fama 4', 'Família ou Mentor Honrado', 'Identidade Secreta', 'Improvisador 1',
+                             'Improvisador 2', 'Influência Política/Burocrática 1', 'Influência Política/Burocrática 2',
+                              'Influência Política/Burocrática 3', 'Influência Política/Burocrática 4', 
+                              'Influência Política/Burocrática 5', 'Influência Jurisprudente 1', 'Influência Jurisprudente 2','Influência Jurisprudente 3', 'Influência Jurisprudente 4', 'Influência Jurisprudente 5',
+                              'Influência Eclesiástica 1', 'Influência Eclesiástica 2', 'Influência Eclesiástica 3',
+                              'Influência Eclesiástica 4', 'Influência Eclesiástica 5', 'Influência Econômica 1',
+                               'Influência Econômica 2', 'Influência Econômica 3', 'Influência Econômica 4', 
+                               'Influência Econômica 5', 'Influência Midiática 1', 'Influência Midiática 2', 
+                               'Influência Midiática 3', 'Influência Midiática 4', 'Influência Midiática 5', 'Infravisão',
+                                'Iniciativa Aprimorada', 'Medicina', 'Patrono','Pechincheiro','Pontos de HP Extras', 'Pontos de Mana Extras',
+                                 'Precognição', 'Resistência a Dor', 'Sentidos Aguçados (Visão)', 
+                                 'Sentidos Aguçados (Tato)', 'Sentidos Aguçados (Olfato)', 'Sentidos Aguçados (Paladar)',
+                                  'Sentidos Aguçados (Audição)','Sortudo 1','Sortudo 2', 'Torcida', 'Visão Noturna'}" 
+                                   field="nomeVant4"/>
+
+                        <label left="0" top="0" align="left" text="Descrição: " margins="{left=10;top=20}" width="100" autoSize="true"/>
+                        <label left="0" top="0" align="left" text="descricao " margins="{top=20}" autoSize="true" width="500" field="descricaoVant4"/>
+                        <label left="0" top="0" align="left" text="Custo: " margins="{top=20}" autoSize="true" width="50"/>
+                        <label left="0" top="0" align="left" text="custo " margins="{top=20}" autoSize="true" width="10" field="custoVant4"/>
+
+                        <flowLineBreak/>
+
+                        <!--Vantagem 5 -->
+                        <label left="0" top="0" align="left" text="Vantagem:" margins="{top=20}" autoSize="true"/>
+                        <comboBox align="client" left="20" top="20" width="250" margins="{top=20; right=10}" items="{'N/A','Acerto', 'Alma Gêmea','Ambidestria', 'Ambiente Favorável 1', 'Ambiente Favorável 2',
+                        'Ambiente Favorável 3','Amor Polígamo', 'Amor Verdadeiro', 'Aparência Inofensiva', 'Arma de Fogo 1',
+                         'Arma de Fogo 2', 'Arma de Fogo 3','Bom Senso','Conhecimentos Arcanos', 'Contatos e Aliados 1', 'Contatos e Aliados 2',
+                          'Contatos e Aliados 3', 'Contatos e Aliados 4', 'Coração de Pedra', 'Detectar Magia 1',
+                           'Detectar Magia 2', 'Dívida de Gratidão 1', 'Dívida de Gratidão 2', 'Dívida de Gratidão 3',
+                            'Empatia com Animais','Fama 1','Fama 2','Fama 3','Fama 4', 'Família ou Mentor Honrado', 'Identidade Secreta', 'Improvisador 1',
+                             'Improvisador 2', 'Influência Política/Burocrática 1', 'Influência Política/Burocrática 2',
+                              'Influência Política/Burocrática 3', 'Influência Política/Burocrática 4', 
+                              'Influência Política/Burocrática 5', 'Influência Jurisprudente 1', 'Influência Jurisprudente 2','Influência Jurisprudente 3', 'Influência Jurisprudente 4', 'Influência Jurisprudente 5',
+                              'Influência Eclesiástica 1', 'Influência Eclesiástica 2', 'Influência Eclesiástica 3',
+                              'Influência Eclesiástica 4', 'Influência Eclesiástica 5', 'Influência Econômica 1',
+                               'Influência Econômica 2', 'Influência Econômica 3', 'Influência Econômica 4', 
+                               'Influência Econômica 5', 'Influência Midiática 1', 'Influência Midiática 2', 
+                               'Influência Midiática 3', 'Influência Midiática 4', 'Influência Midiática 5', 'Infravisão',
+                                'Iniciativa Aprimorada', 'Medicina', 'Patrono','Pechincheiro','Pontos de HP Extras', 'Pontos de Mana Extras',
+                                 'Precognição', 'Resistência a Dor', 'Sentidos Aguçados (Visão)', 
+                                 'Sentidos Aguçados (Tato)', 'Sentidos Aguçados (Olfato)', 'Sentidos Aguçados (Paladar)',
+                                  'Sentidos Aguçados (Audição)','Sortudo 1','Sortudo 2', 'Torcida', 'Visão Noturna'}" 
+                                   field="nomeVant5"/>
+
+                        <label left="0" top="0" align="left" text="Descrição: " margins="{left=10;top=20}" width="100" autoSize="true"/>
+                        <label left="0" top="0" align="left" text="descricao " margins="{top=20}" autoSize="true" width="500" field="descricaoVant5"/>
+                        <label left="0" top="0" align="left" text="Custo: " margins="{top=20}" autoSize="true" width="50"/>
+                        <label left="0" top="0" align="left" text="custo " margins="{top=20}" autoSize="true" width="10" field="custoVant5"/>
+
+                        <flowLineBreak/>
+
+                        <!--Vantagem 6 -->
+                        <label left="0" top="0" align="left" text="Vantagem:" margins="{top=20}" autoSize="true"/>
+                        <comboBox align="client" left="20" top="20" width="250" margins="{top=20; right=10}" items="{'N/A','Acerto', 'Alma Gêmea','Ambidestria', 'Ambiente Favorável 1', 'Ambiente Favorável 2',
+                        'Ambiente Favorável 3','Amor Polígamo', 'Amor Verdadeiro', 'Aparência Inofensiva', 'Arma de Fogo 1',
+                         'Arma de Fogo 2', 'Arma de Fogo 3','Bom Senso','Conhecimentos Arcanos', 'Contatos e Aliados 1', 'Contatos e Aliados 2',
+                          'Contatos e Aliados 3', 'Contatos e Aliados 4', 'Coração de Pedra', 'Detectar Magia 1',
+                           'Detectar Magia 2', 'Dívida de Gratidão 1', 'Dívida de Gratidão 2', 'Dívida de Gratidão 3',
+                            'Empatia com Animais','Fama 1','Fama 2','Fama 3','Fama 4', 'Família ou Mentor Honrado', 'Identidade Secreta', 'Improvisador 1',
+                             'Improvisador 2', 'Influência Política/Burocrática 1', 'Influência Política/Burocrática 2',
+                              'Influência Política/Burocrática 3', 'Influência Política/Burocrática 4', 
+                              'Influência Política/Burocrática 5', 'Influência Jurisprudente 1', 'Influência Jurisprudente 2','Influência Jurisprudente 3', 'Influência Jurisprudente 4', 'Influência Jurisprudente 5',
+                              'Influência Eclesiástica 1', 'Influência Eclesiástica 2', 'Influência Eclesiástica 3',
+                              'Influência Eclesiástica 4', 'Influência Eclesiástica 5', 'Influência Econômica 1',
+                               'Influência Econômica 2', 'Influência Econômica 3', 'Influência Econômica 4', 
+                               'Influência Econômica 5', 'Influência Midiática 1', 'Influência Midiática 2', 
+                               'Influência Midiática 3', 'Influência Midiática 4', 'Influência Midiática 5', 'Infravisão',
+                                'Iniciativa Aprimorada', 'Medicina', 'Patrono','Pechincheiro','Pontos de HP Extras', 'Pontos de Mana Extras',
+                                 'Precognição', 'Resistência a Dor', 'Sentidos Aguçados (Visão)', 
+                                 'Sentidos Aguçados (Tato)', 'Sentidos Aguçados (Olfato)', 'Sentidos Aguçados (Paladar)',
+                                  'Sentidos Aguçados (Audição)','Sortudo 1','Sortudo 2', 'Torcida', 'Visão Noturna'}" 
+                                   field="nomeVant6"/>
+
+                        <label left="0" top="0" align="left" text="Descrição: " margins="{left=10;top=20}" width="100" autoSize="true"/>
+                        <label left="0" top="0" align="left" text="descricao " margins="{top=20}" autoSize="true" width="500" field="descricaoVant6"/>
+                        <label left="0" top="0" align="left" text="Custo: " margins="{top=20}" autoSize="true" width="50"/>
+                        <label left="0" top="0" align="left" text="custo " margins="{top=20}" autoSize="true" width="10" field="custoVant6"/>
+
+                        <flowLineBreak/>
+
+                        <!--Vantagem 7 -->
+                        <label left="0" top="0" align="left" text="Vantagem:" margins="{top=20}" autoSize="true"/>
+                        <comboBox align="client" left="20" top="20" width="250" margins="{top=20; right=10}" items="{'N/A','Acerto', 'Alma Gêmea','Ambidestria', 'Ambiente Favorável 1', 'Ambiente Favorável 2',
+                        'Ambiente Favorável 3','Amor Polígamo', 'Amor Verdadeiro', 'Aparência Inofensiva', 'Arma de Fogo 1',
+                         'Arma de Fogo 2', 'Arma de Fogo 3','Bom Senso','Conhecimentos Arcanos', 'Contatos e Aliados 1', 'Contatos e Aliados 2',
+                          'Contatos e Aliados 3', 'Contatos e Aliados 4', 'Coração de Pedra', 'Detectar Magia 1',
+                           'Detectar Magia 2', 'Dívida de Gratidão 1', 'Dívida de Gratidão 2', 'Dívida de Gratidão 3',
+                            'Empatia com Animais','Fama 1','Fama 2','Fama 3','Fama 4', 'Família ou Mentor Honrado', 'Identidade Secreta', 'Improvisador 1',
+                             'Improvisador 2', 'Influência Política/Burocrática 1', 'Influência Política/Burocrática 2',
+                              'Influência Política/Burocrática 3', 'Influência Política/Burocrática 4', 
+                              'Influência Política/Burocrática 5', 'Influência Jurisprudente 1', 'Influência Jurisprudente 2','Influência Jurisprudente 3', 'Influência Jurisprudente 4', 'Influência Jurisprudente 5',
+                              'Influência Eclesiástica 1', 'Influência Eclesiástica 2', 'Influência Eclesiástica 3',
+                              'Influência Eclesiástica 4', 'Influência Eclesiástica 5', 'Influência Econômica 1',
+                               'Influência Econômica 2', 'Influência Econômica 3', 'Influência Econômica 4', 
+                               'Influência Econômica 5', 'Influência Midiática 1', 'Influência Midiática 2', 
+                               'Influência Midiática 3', 'Influência Midiática 4', 'Influência Midiática 5', 'Infravisão',
+                                'Iniciativa Aprimorada', 'Medicina', 'Patrono','Pechincheiro','Pontos de HP Extras', 'Pontos de Mana Extras',
+                                 'Precognição', 'Resistência a Dor', 'Sentidos Aguçados (Visão)', 
+                                 'Sentidos Aguçados (Tato)', 'Sentidos Aguçados (Olfato)', 'Sentidos Aguçados (Paladar)',
+                                  'Sentidos Aguçados (Audição)','Sortudo 1','Sortudo 2', 'Torcida', 'Visão Noturna'}" 
+                                   field="nomeVant7"/>
+
+                        <label left="0" top="0" align="left" text="Descrição: " margins="{left=10;top=20}" width="100" autoSize="true"/>
+                        <label left="0" top="0" align="left" text="descricao " margins="{top=20}" autoSize="true" width="500" field="descricaoVant7"/>
+                        <label left="0" top="0" align="left" text="Custo: " margins="{top=20}" autoSize="true" width="50"/>
+                        <label left="0" top="0" align="left" text="custo " margins="{top=20}" autoSize="true" width="10" field="custoVant7"/>
+
+                        <flowLineBreak/>
+
+                        <!--Vantagem 8 -->
+                        <label left="0" top="0" align="left" text="Vantagem:" margins="{top=20}" autoSize="true"/>
+                        <comboBox align="client" left="20" top="20" width="250" margins="{top=20; right=10}" items="{'N/A','Acerto', 'Alma Gêmea','Ambidestria', 'Ambiente Favorável 1', 'Ambiente Favorável 2',
+                        'Ambiente Favorável 3','Amor Polígamo', 'Amor Verdadeiro', 'Aparência Inofensiva', 'Arma de Fogo 1',
+                         'Arma de Fogo 2', 'Arma de Fogo 3','Bom Senso','Conhecimentos Arcanos', 'Contatos e Aliados 1', 'Contatos e Aliados 2',
+                          'Contatos e Aliados 3', 'Contatos e Aliados 4', 'Coração de Pedra', 'Detectar Magia 1',
+                           'Detectar Magia 2', 'Dívida de Gratidão 1', 'Dívida de Gratidão 2', 'Dívida de Gratidão 3',
+                            'Empatia com Animais','Fama 1','Fama 2','Fama 3','Fama 4', 'Família ou Mentor Honrado', 'Identidade Secreta', 'Improvisador 1',
+                             'Improvisador 2', 'Influência Política/Burocrática 1', 'Influência Política/Burocrática 2',
+                              'Influência Política/Burocrática 3', 'Influência Política/Burocrática 4', 
+                              'Influência Política/Burocrática 5', 'Influência Jurisprudente 1', 'Influência Jurisprudente 2','Influência Jurisprudente 3', 'Influência Jurisprudente 4', 'Influência Jurisprudente 5',
+                              'Influência Eclesiástica 1', 'Influência Eclesiástica 2', 'Influência Eclesiástica 3',
+                              'Influência Eclesiástica 4', 'Influência Eclesiástica 5', 'Influência Econômica 1',
+                               'Influência Econômica 2', 'Influência Econômica 3', 'Influência Econômica 4', 
+                               'Influência Econômica 5', 'Influência Midiática 1', 'Influência Midiática 2', 
+                               'Influência Midiática 3', 'Influência Midiática 4', 'Influência Midiática 5', 'Infravisão',
+                                'Iniciativa Aprimorada', 'Medicina', 'Patrono','Pechincheiro','Pontos de HP Extras', 'Pontos de Mana Extras',
+                                 'Precognição', 'Resistência a Dor', 'Sentidos Aguçados (Visão)', 
+                                 'Sentidos Aguçados (Tato)', 'Sentidos Aguçados (Olfato)', 'Sentidos Aguçados (Paladar)',
+                                  'Sentidos Aguçados (Audição)','Sortudo 1','Sortudo 2', 'Torcida', 'Visão Noturna'}" 
+                                   field="nomeVant8"/>
+
+                        <label left="0" top="0" align="left" text="Descrição: " margins="{left=10;top=20}" width="100" autoSize="true"/>
+                        <label left="0" top="0" align="left" text="descricao " margins="{top=20}" autoSize="true" width="500" field="descricaoVant8"/>
+                        <label left="0" top="0" align="left" text="Custo: " margins="{top=20}" autoSize="true" width="50"/>
+                        <label left="0" top="0" align="left" text="custo " margins="{top=20}" autoSize="true" width="10" field="custoVant8"/>
+
+                        <flowLineBreak/>
+
+                        <!--Vantagem 9 -->
+                        <label left="0" top="0" align="left" text="Vantagem:" margins="{top=20}" autoSize="true"/>
+                        <comboBox align="client" left="20" top="20" width="250" margins="{top=20; right=10}" items="{'N/A','Acerto', 'Alma Gêmea','Ambidestria', 'Ambiente Favorável 1', 'Ambiente Favorável 2',
+                        'Ambiente Favorável 3','Amor Polígamo', 'Amor Verdadeiro', 'Aparência Inofensiva', 'Arma de Fogo 1',
+                         'Arma de Fogo 2', 'Arma de Fogo 3','Bom Senso','Conhecimentos Arcanos', 'Contatos e Aliados 1', 'Contatos e Aliados 2',
+                          'Contatos e Aliados 3', 'Contatos e Aliados 4', 'Coração de Pedra', 'Detectar Magia 1',
+                           'Detectar Magia 2', 'Dívida de Gratidão 1', 'Dívida de Gratidão 2', 'Dívida de Gratidão 3',
+                            'Empatia com Animais','Fama 1','Fama 2','Fama 3','Fama 4', 'Família ou Mentor Honrado', 'Identidade Secreta', 'Improvisador 1',
+                             'Improvisador 2', 'Influência Política/Burocrática 1', 'Influência Política/Burocrática 2',
+                              'Influência Política/Burocrática 3', 'Influência Política/Burocrática 4', 
+                              'Influência Política/Burocrática 5', 'Influência Jurisprudente 1', 'Influência Jurisprudente 2','Influência Jurisprudente 3', 'Influência Jurisprudente 4', 'Influência Jurisprudente 5',
+                              'Influência Eclesiástica 1', 'Influência Eclesiástica 2', 'Influência Eclesiástica 3',
+                              'Influência Eclesiástica 4', 'Influência Eclesiástica 5', 'Influência Econômica 1',
+                               'Influência Econômica 2', 'Influência Econômica 3', 'Influência Econômica 4', 
+                               'Influência Econômica 5', 'Influência Midiática 1', 'Influência Midiática 2', 
+                               'Influência Midiática 3', 'Influência Midiática 4', 'Influência Midiática 5', 'Infravisão',
+                                'Iniciativa Aprimorada', 'Medicina', 'Patrono','Pechincheiro','Pontos de HP Extras', 'Pontos de Mana Extras',
+                                 'Precognição', 'Resistência a Dor', 'Sentidos Aguçados (Visão)', 
+                                 'Sentidos Aguçados (Tato)', 'Sentidos Aguçados (Olfato)', 'Sentidos Aguçados (Paladar)',
+                                  'Sentidos Aguçados (Audição)','Sortudo 1','Sortudo 2', 'Torcida', 'Visão Noturna'}"
+                                   field="nomeVant9"/>
+
+                        <label left="0" top="0" align="left" text="Descrição: " margins="{left=10;top=20}" width="100" autoSize="true"/>
+                        <label left="0" top="0" align="left" text="descricao " margins="{top=20}" autoSize="true" width="500" field="descricaoVant9"/>
+                        <label left="0" top="0" align="left" text="Custo: " margins="{top=20}" autoSize="true" width="50"/>
+                        <label left="0" top="0" align="left" text="custo " margins="{top=20}" autoSize="true" width="10" field="custoVant9"/>
+
+                        <flowLineBreak/>
+
+                        <!--Vantagem 10 -->
+                        <label left="0" top="0" align="left" text="Vantagem:" margins="{top=20}" autoSize="true"/>
+                        <comboBox align="client" left="20" top="20" width="250" margins="{top=20; right=10}" items="{'N/A','Acerto', 'Alma Gêmea','Ambidestria', 'Ambiente Favorável 1', 'Ambiente Favorável 2',
+                        'Ambiente Favorável 3','Amor Polígamo', 'Amor Verdadeiro', 'Aparência Inofensiva', 'Arma de Fogo 1',
+                         'Arma de Fogo 2', 'Arma de Fogo 3','Bom Senso','Conhecimentos Arcanos', 'Contatos e Aliados 1', 'Contatos e Aliados 2',
+                          'Contatos e Aliados 3', 'Contatos e Aliados 4', 'Coração de Pedra', 'Detectar Magia 1',
+                           'Detectar Magia 2', 'Dívida de Gratidão 1', 'Dívida de Gratidão 2', 'Dívida de Gratidão 3',
+                            'Empatia com Animais','Fama 1','Fama 2','Fama 3','Fama 4', 'Família ou Mentor Honrado', 'Identidade Secreta', 'Improvisador 1',
+                             'Improvisador 2', 'Influência Política/Burocrática 1', 'Influência Política/Burocrática 2',
+                              'Influência Política/Burocrática 3', 'Influência Política/Burocrática 4', 
+                              'Influência Política/Burocrática 5', 'Influência Jurisprudente 1', 'Influência Jurisprudente 2','Influência Jurisprudente 3', 'Influência Jurisprudente 4', 'Influência Jurisprudente 5',
+                              'Influência Eclesiástica 1', 'Influência Eclesiástica 2', 'Influência Eclesiástica 3',
+                              'Influência Eclesiástica 4', 'Influência Eclesiástica 5', 'Influência Econômica 1',
+                               'Influência Econômica 2', 'Influência Econômica 3', 'Influência Econômica 4', 
+                               'Influência Econômica 5', 'Influência Midiática 1', 'Influência Midiática 2', 
+                               'Influência Midiática 3', 'Influência Midiática 4', 'Influência Midiática 5', 'Infravisão',
+                                'Iniciativa Aprimorada', 'Medicina', 'Patrono','Pechincheiro','Pontos de HP Extras', 'Pontos de Mana Extras',
+                                 'Precognição', 'Resistência a Dor', 'Sentidos Aguçados (Visão)', 
+                                 'Sentidos Aguçados (Tato)', 'Sentidos Aguçados (Olfato)', 'Sentidos Aguçados (Paladar)',
+                                  'Sentidos Aguçados (Audição)','Sortudo 1','Sortudo 2', 'Torcida', 'Visão Noturna'}"  field="nomeVant10"/>
+
+                        <label left="0" top="0" align="left" text="Descrição: " margins="{left=10;top=20}" width="100" autoSize="true"/>
+                        <label left="0" top="0" align="left" text="descricao " margins="{top=20}" autoSize="true" width="500" field="descricaoVant10"/>
+                        <label left="0" top="0" align="left" text="Custo: " margins="{top=20}" autoSize="true" width="50"/>
+                        <label left="0" top="0" align="left" text="custo " margins="{top=20}" autoSize="true" width="10" field="custoVant10"/>
+
+
+                    </flowLayout>
+
+
+                </tab>   
+
+                <!-- Aba Desvantagem-->
+                <tab title="Desvantagens">
+                    <flowLayout left="10" top="10" width="1500" height="3000">    
+                        
+                        <label left="0" top="0" align="left" fontSize="20" fontFamily="Copperplate Gothic" text="DESVANTAGENS" margins="{left=500;bottom=10}" width="250" height="30"/>
+
+                        <label left="0" top="0" align="left" fontSize="14" text="Pontos Ganhos: " margins="{left=200;bottom=10}" autoSize="true"/>
+                        <label left="0" top="0" align="left" fontSize="14" text="totalPtos " margins="{left=5;bottom=10}" field="TotalDesvant" width="20"/>
+                        <flowLineBreak/>
+                        
+                        <!--Desvantagem 1 -->
+                        <label left="0" top="0" align="left" text="Desvantagem:" margins="{top=20}" autoSize="true"/>
+                        <comboBox align="client" left="20" top="20" width="250" margins="{top=20; right=10}" items="{'N/A','Alergia', 'Alcoólotra','Andrógino', 'Aparência Trocada', 'Azarado', 'Casto','Cleptomaníaco',
+                         'Código dos Cavalheiros', 'Código de Combate', 'Código do Caçador', 'Código dos Herois',
+                         'Compulsão','Complexo de Culpa','Complexo de Inferioridade', 'Coração Mole',
+                          'Coração de Gado','Covarde', 'Crédulo', 'Curioso','Deficiente Físico 1', 
+                           'Deficiente Físico 2', 'Deficiente Físico 3', 'Dificuldade de Fala','Distração',
+                           'Dupla Personalidade','Estigma Social','Esquizofrênico', 'Família ou Mentor Desonrado',
+                           'Fanático', 'Fanfarrão','Fobia 1', 'Fobia 2', 'Fúria','Ganância', 'Gula', 
+                           'Hábitos Detestáveis', 'Hipocondria', 'Inimigo', 'Intolerância', 'Má Fama 1', 'Má Fama 2',
+                            'Má Fama 3', 'Maldição 1', 'Maldição 2', 'Maldição 3', 'Mania', 'Maníaco Depressivo',
+                             'Marca do Predador', 'Megalomaníaco', 'Mentiroso Compulsivo', 'Monstruoso', 'Pacifista 1',
+                              'Pacifista 2', 'Pacifista 3', 'Paranoia 1', 'Paranoia 2','Perda Terrível', 'Pesadelos',
+                              'Protegido Indefeso', 'Sanguinário', 'Sarcasmo','Sono Pesado', 'Supersticioso', 
+                               'Suspeito 1', 'Suspeito 2', 'Teimosia', 'Timidez', 'Traumatizado', 'Viciado em Jogos',
+                                'Visão Monocromática','Vontade Fraca'}" field="nomeDesvant"/>
+
+                        <label left="0" top="0" align="left" text="Descrição: " margins="{left=10;top=20}" width="100" autoSize="true"/>
+                        <label left="0" top="0" align="left" text="descricao " margins="{top=20}" autoSize="true" width="500" field="descricaoDesvant"/>
+                        <label left="0" top="0" align="left" text="Custo: " margins="{top=20}" autoSize="true" width="50"/>
+                        <label left="0" top="0" align="left" text="custo " margins="{top=20}" autoSize="true" width="20" field="custoDesvant"/>
+                        
+                        <flowLineBreak/>        
+                    
+                        <!--Desvantagem 2 -->
+                        <label left="0" top="0" align="left" text="Desvantagem:" margins="{top=20}" autoSize="true"/>
+                        <comboBox align="client" left="20" top="20" width="250" margins="{top=20; right=10}" items="{'N/A','Alergia', 'Alcoólotra','Andrógino', 'Aparência Trocada', 'Azarado', 'Casto','Cleptomaníaco',
+                         'Código dos Cavalheiros', 'Código de Combate', 'Código do Caçador', 'Código dos Herois',
+                         'Compulsão','Complexo de Culpa','Complexo de Inferioridade', 'Coração Mole',
+                          'Coração de Gado','Covarde', 'Crédulo', 'Curioso','Deficiente Físico 1', 
+                           'Deficiente Físico 2', 'Deficiente Físico 3', 'Dificuldade de Fala','Distração',
+                           'Dupla Personalidade','Estigma Social','Esquizofrênico', 'Família ou Mentor Desonrado',
+                           'Fanático', 'Fanfarrão','Fobia 1', 'Fobia 2', 'Fúria','Ganância', 'Gula', 
+                           'Hábitos Detestáveis', 'Hipocondria', 'Inimigo', 'Intolerância', 'Má Fama 1', 'Má Fama 2',
+                            'Má Fama 3', 'Maldição 1', 'Maldição 2', 'Maldição 3', 'Mania', 'Maníaco Depressivo',
+                             'Marca do Predador', 'Megalomaníaco', 'Mentiroso Compulsivo', 'Monstruoso', 'Pacifista 1',
+                              'Pacifista 2', 'Pacifista 3', 'Paranoia 1', 'Paranoia 2','Perda Terrível', 'Pesadelos',
+                              'Protegido Indefeso', 'Sanguinário', 'Sarcasmo','Sono Pesado', 'Supersticioso', 
+                               'Suspeito 1', 'Suspeito 2', 'Teimosia', 'Timidez', 'Traumatizado', 'Viciado em Jogos',
+                                'Visão Monocromática','Vontade Fraca'}" field="nomeDesvant2"/>
+
+                        <label left="0" top="0" align="left" text="Descrição: " margins="{left=10;top=20}" width="100" autoSize="true"/>
+                        <label left="0" top="0" align="left" text="descricao " margins="{top=20}" autoSize="true" width="500" field="descricaoDesvant2"/>
+                        <label left="0" top="0" align="left" text="Custo: " margins="{top=20}" autoSize="true" width="50"/>
+                        <label left="0" top="0" align="left" text="custo " margins="{top=20}" autoSize="true" width="20" field="custoDesvant2"/>
+                        
+                        <flowLineBreak/>
+
+                        <!--Desvantagem 3 -->
+                        <label left="0" top="0" align="left" text="Desvantagem:" margins="{top=20}" autoSize="true"/>
+                        <comboBox align="client" left="20" top="20" width="250" margins="{top=20; right=10}" items="{'N/A','Alergia', 'Alcoólotra','Andrógino', 'Aparência Trocada', 'Azarado', 'Casto','Cleptomaníaco',
+                         'Código dos Cavalheiros', 'Código de Combate', 'Código do Caçador', 'Código dos Herois',
+                         'Compulsão','Complexo de Culpa','Complexo de Inferioridade', 'Coração Mole',
+                          'Coração de Gado','Covarde', 'Crédulo', 'Curioso','Deficiente Físico 1', 
+                           'Deficiente Físico 2', 'Deficiente Físico 3', 'Dificuldade de Fala','Distração',
+                           'Dupla Personalidade','Estigma Social','Esquizofrênico', 'Família ou Mentor Desonrado',
+                           'Fanático', 'Fanfarrão','Fobia 1', 'Fobia 2', 'Fúria','Ganância', 'Gula', 
+                           'Hábitos Detestáveis', 'Hipocondria', 'Inimigo', 'Intolerância', 'Má Fama 1', 'Má Fama 2',
+                            'Má Fama 3', 'Maldição 1', 'Maldição 2', 'Maldição 3', 'Mania', 'Maníaco Depressivo',
+                             'Marca do Predador', 'Megalomaníaco', 'Mentiroso Compulsivo', 'Monstruoso', 'Pacifista 1',
+                              'Pacifista 2', 'Pacifista 3', 'Paranoia 1', 'Paranoia 2','Perda Terrível', 'Pesadelos',
+                              'Protegido Indefeso', 'Sanguinário', 'Sarcasmo','Sono Pesado', 'Supersticioso', 
+                               'Suspeito 1', 'Suspeito 2', 'Teimosia', 'Timidez', 'Traumatizado', 'Viciado em Jogos',
+                                'Visão Monocromática','Vontade Fraca'}" field="nomeDesvant3"/>
+
+                        <label left="0" top="0" align="left" text="Descrição: " margins="{left=10;top=20}" width="100" autoSize="true"/>
+                        <label left="0" top="0" align="left" text="descricao " margins="{top=20}" autoSize="true" width="500" field="descricaoDesvant3"/>
+                        <label left="0" top="0" align="left" text="Custo: " margins="{top=20}" autoSize="true" width="50"/>
+                        <label left="0" top="0" align="left" text="custo " margins="{top=20}" autoSize="true" width="20" field="custoDesvant3"/>
+                        
+                        <flowLineBreak/>
+
+                        <!--Desvantagem 4 -->
+                        <label left="0" top="0" align="left" text="Desvantagem:" margins="{top=20}" autoSize="true"/>
+                        <comboBox align="client" left="20" top="20" width="250" margins="{top=20; right=10}" items="{'N/A','Alergia', 'Alcoólotra','Andrógino', 'Aparência Trocada', 'Azarado', 'Casto','Cleptomaníaco',
+                         'Código dos Cavalheiros', 'Código de Combate', 'Código do Caçador', 'Código dos Herois',
+                         'Compulsão','Complexo de Culpa','Complexo de Inferioridade', 'Coração Mole',
+                          'Coração de Gado','Covarde', 'Crédulo', 'Curioso','Deficiente Físico 1', 
+                           'Deficiente Físico 2', 'Deficiente Físico 3', 'Dificuldade de Fala','Distração',
+                           'Dupla Personalidade','Estigma Social','Esquizofrênico', 'Família ou Mentor Desonrado',
+                           'Fanático', 'Fanfarrão','Fobia 1', 'Fobia 2', 'Fúria','Ganância', 'Gula', 
+                           'Hábitos Detestáveis', 'Hipocondria', 'Inimigo', 'Intolerância', 'Má Fama 1', 'Má Fama 2',
+                            'Má Fama 3', 'Maldição 1', 'Maldição 2', 'Maldição 3', 'Mania', 'Maníaco Depressivo',
+                             'Marca do Predador', 'Megalomaníaco', 'Mentiroso Compulsivo', 'Monstruoso', 'Pacifista 1',
+                              'Pacifista 2', 'Pacifista 3', 'Paranoia 1', 'Paranoia 2','Perda Terrível', 'Pesadelos',
+                              'Protegido Indefeso', 'Sanguinário', 'Sarcasmo','Sono Pesado', 'Supersticioso', 
+                               'Suspeito 1', 'Suspeito 2', 'Teimosia', 'Timidez', 'Traumatizado', 'Viciado em Jogos',
+                                'Visão Monocromática','Vontade Fraca'}" field="nomeDesvant4"/>
+
+                        <label left="0" top="0" align="left" text="Descrição: " margins="{left=10;top=20}" width="100" autoSize="true"/>
+                        <label left="0" top="0" align="left" text="descricao " margins="{top=20}" autoSize="true" width="500" field="descricaoDesvant4"/>
+                        <label left="0" top="0" align="left" text="Custo: " margins="{top=20}" autoSize="true" width="50"/>
+                        <label left="0" top="0" align="left" text="custo " margins="{top=20}" autoSize="true" width="20" field="custoDesvant4"/>
+                        
+                        <flowLineBreak/>
+
+                        <!--Desvantagem 5 -->
+                        <label left="0" top="0" align="left" text="Desvantagem:" margins="{top=20}" autoSize="true"/>
+                        <comboBox align="client" left="20" top="20" width="250" margins="{top=20; right=10}" items="{'N/A','Alergia', 'Alcoólotra','Andrógino', 'Aparência Trocada', 'Azarado', 'Casto','Cleptomaníaco',
+                         'Código dos Cavalheiros', 'Código de Combate', 'Código do Caçador', 'Código dos Herois',
+                         'Compulsão','Complexo de Culpa','Complexo de Inferioridade', 'Coração Mole',
+                          'Coração de Gado','Covarde', 'Crédulo', 'Curioso','Deficiente Físico 1', 
+                           'Deficiente Físico 2', 'Deficiente Físico 3', 'Dificuldade de Fala','Distração',
+                           'Dupla Personalidade','Estigma Social','Esquizofrênico', 'Família ou Mentor Desonrado',
+                           'Fanático', 'Fanfarrão','Fobia 1', 'Fobia 2', 'Fúria','Ganância', 'Gula', 
+                           'Hábitos Detestáveis', 'Hipocondria', 'Inimigo', 'Intolerância', 'Má Fama 1', 'Má Fama 2',
+                            'Má Fama 3', 'Maldição 1', 'Maldição 2', 'Maldição 3', 'Mania', 'Maníaco Depressivo',
+                             'Marca do Predador', 'Megalomaníaco', 'Mentiroso Compulsivo', 'Monstruoso', 'Pacifista 1',
+                              'Pacifista 2', 'Pacifista 3', 'Paranoia 1', 'Paranoia 2','Perda Terrível', 'Pesadelos',
+                              'Protegido Indefeso', 'Sanguinário', 'Sarcasmo','Sono Pesado', 'Supersticioso', 
+                               'Suspeito 1', 'Suspeito 2', 'Teimosia', 'Timidez', 'Traumatizado', 'Viciado em Jogos',
+                                'Visão Monocromática','Vontade Fraca'}" field="nomeDesvant5"/>
+
+                        <label left="0" top="0" align="left" text="Descrição: " margins="{left=10;top=20}" width="100" autoSize="true"/>
+                        <label left="0" top="0" align="left" text="descricao " margins="{top=20}" autoSize="true" width="500" field="descricaoDesvant5"/>
+                        <label left="0" top="0" align="left" text="Custo: " margins="{top=20}" autoSize="true" width="50"/>
+                        <label left="0" top="0" align="left" text="custo " margins="{top=20}" autoSize="true" width="20" field="custoDesvant5"/>
+                        
+                        <flowLineBreak/>
+
+                        <!--Desvantagem 6 -->
+                        <label left="0" top="0" align="left" text="Desvantagem:" margins="{top=20}" autoSize="true"/>
+                        <comboBox align="client" left="20" top="20" width="250" margins="{top=20; right=10}" items="{'N/A','Alergia', 'Alcoólotra','Andrógino', 'Aparência Trocada', 'Azarado', 'Casto','Cleptomaníaco',
+                         'Código dos Cavalheiros', 'Código de Combate', 'Código do Caçador', 'Código dos Herois',
+                         'Compulsão','Complexo de Culpa','Complexo de Inferioridade', 'Coração Mole',
+                          'Coração de Gado','Covarde', 'Crédulo', 'Curioso','Deficiente Físico 1', 
+                           'Deficiente Físico 2', 'Deficiente Físico 3', 'Dificuldade de Fala','Distração',
+                           'Dupla Personalidade','Estigma Social','Esquizofrênico', 'Família ou Mentor Desonrado',
+                           'Fanático', 'Fanfarrão','Fobia 1', 'Fobia 2', 'Fúria','Ganância', 'Gula', 
+                           'Hábitos Detestáveis', 'Hipocondria', 'Inimigo', 'Intolerância', 'Má Fama 1', 'Má Fama 2',
+                            'Má Fama 3', 'Maldição 1', 'Maldição 2', 'Maldição 3', 'Mania', 'Maníaco Depressivo',
+                             'Marca do Predador', 'Megalomaníaco', 'Mentiroso Compulsivo', 'Monstruoso', 'Pacifista 1',
+                              'Pacifista 2', 'Pacifista 3', 'Paranoia 1', 'Paranoia 2','Perda Terrível', 'Pesadelos',
+                              'Protegido Indefeso', 'Sanguinário', 'Sarcasmo','Sono Pesado', 'Supersticioso', 
+                               'Suspeito 1', 'Suspeito 2', 'Teimosia', 'Timidez', 'Traumatizado', 'Viciado em Jogos',
+                                'Visão Monocromática','Vontade Fraca'}" field="nomeDesvant6"/>
+
+                        <label left="0" top="0" align="left" text="Descrição: " margins="{left=10;top=20}" width="100" autoSize="true"/>
+                        <label left="0" top="0" align="left" text="descricao " margins="{top=20}" autoSize="true" width="500" field="descricaoDesvant6"/>
+                        <label left="0" top="0" align="left" text="Custo: " margins="{top=20}" autoSize="true" width="50"/>
+                        <label left="0" top="0" align="left" text="custo " margins="{top=20}" autoSize="true" width="20" field="custoDesvant6"/>
+                        
+                        <flowLineBreak/>
+
+                        <!--Desvantagem 7 -->
+                        <label left="0" top="0" align="left" text="Desvantagem:" margins="{top=20}" autoSize="true"/>
+                        <comboBox align="client" left="20" top="20" width="250" margins="{top=20; right=10}" items="{'N/A','Alergia', 'Alcoólotra','Andrógino', 'Aparência Trocada', 'Azarado', 'Casto','Cleptomaníaco',
+                         'Código dos Cavalheiros', 'Código de Combate', 'Código do Caçador', 'Código dos Herois',
+                         'Compulsão','Complexo de Culpa','Complexo de Inferioridade', 'Coração Mole',
+                          'Coração de Gado','Covarde', 'Crédulo', 'Curioso','Deficiente Físico 1', 
+                           'Deficiente Físico 2', 'Deficiente Físico 3', 'Dificuldade de Fala','Distração',
+                           'Dupla Personalidade','Estigma Social','Esquizofrênico', 'Família ou Mentor Desonrado',
+                           'Fanático', 'Fanfarrão','Fobia 1', 'Fobia 2', 'Fúria','Ganância', 'Gula', 
+                           'Hábitos Detestáveis', 'Hipocondria', 'Inimigo', 'Intolerância', 'Má Fama 1', 'Má Fama 2',
+                            'Má Fama 3', 'Maldição 1', 'Maldição 2', 'Maldição 3', 'Mania', 'Maníaco Depressivo',
+                             'Marca do Predador', 'Megalomaníaco', 'Mentiroso Compulsivo', 'Monstruoso', 'Pacifista 1',
+                              'Pacifista 2', 'Pacifista 3', 'Paranoia 1', 'Paranoia 2','Perda Terrível', 'Pesadelos',
+                              'Protegido Indefeso', 'Sanguinário', 'Sarcasmo','Sono Pesado', 'Supersticioso', 
+                               'Suspeito 1', 'Suspeito 2', 'Teimosia', 'Timidez', 'Traumatizado', 'Viciado em Jogos',
+                                'Visão Monocromática','Vontade Fraca'}" field="nomeDesvant7"/>
+
+                        <label left="0" top="0" align="left" text="Descrição: " margins="{left=10;top=20}" width="100" autoSize="true"/>
+                        <label left="0" top="0" align="left" text="descricao " margins="{top=20}" autoSize="true" width="500" field="descricaoDesvant7"/>
+                        <label left="0" top="0" align="left" text="Custo: " margins="{top=20}" autoSize="true" width="50"/>
+                        <label left="0" top="0" align="left" text="custo " margins="{top=20}" autoSize="true" width="20" field="custoDesvant7"/>
+                        
+                        <flowLineBreak/>
+
+                        <!--Desvantagem 8 -->
+                        <label left="0" top="0" align="left" text="Desvantagem:" margins="{top=20}" autoSize="true"/>
+                        <comboBox align="client" left="20" top="20" width="250" margins="{top=20; right=10}" items="{'N/A','Alergia', 'Alcoólotra','Andrógino', 'Aparência Trocada', 'Azarado', 'Casto','Cleptomaníaco',
+                         'Código dos Cavalheiros', 'Código de Combate', 'Código do Caçador', 'Código dos Herois',
+                         'Compulsão','Complexo de Culpa','Complexo de Inferioridade', 'Coração Mole',
+                          'Coração de Gado','Covarde', 'Crédulo', 'Curioso','Deficiente Físico 1', 
+                           'Deficiente Físico 2', 'Deficiente Físico 3', 'Dificuldade de Fala','Distração',
+                           'Dupla Personalidade','Estigma Social','Esquizofrênico', 'Família ou Mentor Desonrado',
+                           'Fanático', 'Fanfarrão','Fobia 1', 'Fobia 2', 'Fúria','Ganância', 'Gula', 
+                           'Hábitos Detestáveis', 'Hipocondria', 'Inimigo', 'Intolerância', 'Má Fama 1', 'Má Fama 2',
+                            'Má Fama 3', 'Maldição 1', 'Maldição 2', 'Maldição 3', 'Mania', 'Maníaco Depressivo',
+                             'Marca do Predador', 'Megalomaníaco', 'Mentiroso Compulsivo', 'Monstruoso', 'Pacifista 1',
+                              'Pacifista 2', 'Pacifista 3', 'Paranoia 1', 'Paranoia 2','Perda Terrível', 'Pesadelos',
+                              'Protegido Indefeso', 'Sanguinário', 'Sarcasmo','Sono Pesado', 'Supersticioso', 
+                               'Suspeito 1', 'Suspeito 2', 'Teimosia', 'Timidez', 'Traumatizado', 'Viciado em Jogos',
+                                'Visão Monocromática','Vontade Fraca'}" field="nomeDesvant8"/>
+
+                        <label left="0" top="0" align="left" text="Descrição: " margins="{left=10;top=20}" width="100" autoSize="true"/>
+                        <label left="0" top="0" align="left" text="descricao " margins="{top=20}" autoSize="true" width="500" field="descricaoDesvant8"/>
+                        <label left="0" top="0" align="left" text="Custo: " margins="{top=20}" autoSize="true" width="50"/>
+                        <label left="0" top="0" align="left" text="custo " margins="{top=20}" autoSize="true" width="20" field="custoDesvant8"/>
+                        
+                        <flowLineBreak/>
+
+                        <!--Desvantagem 9 -->
+                        <label left="0" top="0" align="left" text="Desvantagem:" margins="{top=20}" autoSize="true"/>
+                        <comboBox align="client" left="20" top="20" width="250" margins="{top=20; right=10}" items="{'N/A','Alergia', 'Alcoólotra','Andrógino', 'Aparência Trocada', 'Azarado', 'Casto','Cleptomaníaco',
+                         'Código dos Cavalheiros', 'Código de Combate', 'Código do Caçador', 'Código dos Herois',
+                         'Compulsão','Complexo de Culpa','Complexo de Inferioridade', 'Coração Mole',
+                          'Coração de Gado','Covarde', 'Crédulo', 'Curioso','Deficiente Físico 1',
+                           'Deficiente Físico 2', 'Deficiente Físico 3', 'Dificuldade de Fala','Distração',
+                           'Dupla Personalidade','Estigma Social','Esquizofrênico', 'Família ou Mentor Desonrado',
+                           'Fanático', 'Fanfarrão','Fobia 1', 'Fobia 2', 'Fúria','Ganância', 'Gula', 
+                           'Hábitos Detestáveis', 'Hipocondria', 'Inimigo', 'Intolerância', 'Má Fama 1', 'Má Fama 2',
+                            'Má Fama 3', 'Maldição 1', 'Maldição 2', 'Maldição 3', 'Mania', 'Maníaco Depressivo',
+                             'Marca do Predador', 'Megalomaníaco', 'Mentiroso Compulsivo', 'Monstruoso', 'Pacifista 1',
+                              'Pacifista 2', 'Pacifista 3', 'Paranoia 1', 'Paranoia 2','Perda Terrível', 'Pesadelos',
+                              'Protegido Indefeso', 'Sanguinário', 'Sarcasmo','Sono Pesado', 'Supersticioso', 
+                               'Suspeito 1', 'Suspeito 2', 'Teimosia', 'Timidez', 'Traumatizado', 'Viciado em Jogos',
+                                'Visão Monocromática','Vontade Fraca'}" field="nomeDesvant9"/>
+
+                        <label left="0" top="0" align="left" text="Descrição: " margins="{left=10;top=20}" width="100" autoSize="true"/>
+                        <label left="0" top="0" align="left" text="descricao " margins="{top=20}" autoSize="true" width="500" field="descricaoDesvant9"/>
+                        <label left="0" top="0" align="left" text="Custo: " margins="{top=20}" autoSize="true" width="50"/>
+                        <label left="0" top="0" align="left" text="custo " margins="{top=20}" autoSize="true" width="20" field="custoDesvant9"/>
+                        
+                        <flowLineBreak/>
+
+                        <!--Desvantagem 10 -->
+                        <label left="0" top="0" align="left" text="Desvantagem:" margins="{top=20}" autoSize="true"/>
+                        <comboBox align="client" left="20" top="20" width="250" margins="{top=20; right=10}" items="{'N/A', 'Alergia', 'Alcoólotra','Andrógino', 'Aparência Trocada', 'Azarado', 'Casto','Cleptomaníaco',
+                         'Código dos Cavalheiros', 'Código de Combate', 'Código do Caçador', 'Código dos Herois',
+                         'Compulsão','Complexo de Culpa','Complexo de Inferioridade', 'Coração Mole',
+                          'Coração de Gado','Covarde', 'Crédulo', 'Curioso','Deficiente Físico 1', 
+                           'Deficiente Físico 2', 'Deficiente Físico 3', 'Dificuldade de Fala','Distração',
+                           'Dupla Personalidade','Estigma Social','Esquizofrênico', 'Família ou Mentor Desonrado',
+                           'Fanático', 'Fanfarrão','Fobia 1', 'Fobia 2', 'Fúria','Ganância', 'Gula', 
+                           'Hábitos Detestáveis', 'Hipocondria', 'Inimigo', 'Intolerância', 'Má Fama 1', 'Má Fama 2',
+                            'Má Fama 3', 'Maldição 1', 'Maldição 2', 'Maldição 3', 'Mania', 'Maníaco Depressivo',
+                             'Marca do Predador', 'Megalomaníaco', 'Mentiroso Compulsivo', 'Monstruoso', 'Pacifista 1',
+                              'Pacifista 2', 'Pacifista 3', 'Paranoia 1', 'Paranóia 2 ','Perda Terrível', 'Pesadelos',
+                              'Protegido Indefeso', 'Sanguinário', 'Sarcasmo','Sono Pesado', 'Supersticioso', 
+                               'Suspeito 1', 'Suspeito 2', 'Teimosia', 'Timidez', 'Traumatizado', 'Viciado em Jogos',
+                                'Visão Monocromáticia','Vontade Fraca'}" field="nomeDesvant10"/>
+
+                        <label left="0" top="0" align="left" text="Descrição: " margins="{left=10;top=20}" width="100" autoSize="true"/>
+                        <label left="0" top="0" align="left" text="descricao " margins="{top=20}" autoSize="true" width="500" field="descricaoDesvant10"/>
+                        <label left="0" top="0" align="left" text="Custo: " margins="{top=20}" autoSize="true" width="50"/>
+                        <label left="0" top="0" align="left" text="custo " margins="{top=20}" autoSize="true" width="20" field="custoDesvant10"/>
+                        
+
+                    </flowLayout>
+                </tab>    
+
+               
+                <!-- Aba Magia -->   
+                <tab title="Magias / Técnicas">
+                     <flowLayout left="10" top="10" width="1500" height="3000">    
+                		
+                		<label left="0" top="0" align="left" fontSize="14" fontFamily="Copperplate Gothic" text="MAGIA / TÉCNICAS" margins="{left=500;bottom=10}" width="200" height="20"/>
+                		<flowLineBreak/>
+                		<!--Magia 1 -->
+                		<label left="0" top="0" align="left" text="Nome da Técnica:" margins="{top=20}" autoSize="true"/>
+                		<edit left="0" top="0" align="client" horzTextAlign="leading" margins="{top=15}" width="150" height ="25" field="nometec"/>
+                		<label left="0" top="0" align="left" text="Tipo de Efeito:" margins="{left=10;top=20}" autoSize="true"/>
+                		<comboBox align="left" left="0" width="175" top="20" margins="{top=20; right=10}" items="{'N/A','Atordoamento','Cegueira',
+                        'Criação e Sustentação','Cura','Disparo Mágico','Disparo Mágico em Área','Golpe Marcial Elemental','Manipulação','Paralisia',
+                        'Reforço Mágico','Slow','Transformação','Vampirismo'}" field="tipoefeito"/>
+                		<label left="0" top="0" align="left" text="Efeito: " margins="{left=10;top=20}" width="50" autoSize="true"/>
+                		<label left="0" top="0" align="left" text="efeito " margins="{top=20}" autoSize="true" width="325" field="effect"/>
+                		<label left="0" top="0" align="left" text="Custo: " margins="{top=20}" autoSize="true" width="50"/>
+                		<label left="0" top="0" align="left" text="custo " margins="{top=20}" autoSize="true" width="20" field="customagia"/>
+                		<label left="0" top="0" align="left" text="Duração: " margins="{left=20;top=20}" autoSize="true" width="75"/>
+                		<label left="0" top="0" align="left" text="duracao " margins="{top=20}" autoSize="true" field="duracao" width="50"/>
+                		<flowLineBreak/>
+                		
+                		
+                		<!--Magia 2 -->
+                		<label left="0" top="0" align="left" text="Nome da Técnica:" margins="{top=15}" autoSize="true"/>
+                		<edit left="0" top="0" align="client" horzTextAlign="leading" margins="{top=10}" width="150" height ="25" field="nometec2"/>
+                		<label left="0" top="0" align="left" text="Tipo de Efeito:" margins="{left=10;top=15}" autoSize="true"/>
+                		<comboBox align="left" left="0" width="175" top="20" margins="{top=15; right=10}" items="{'N/A','Atordoamento','Cegueira',
+                            'Criação e Sustentação','Cura','Disparo Mágico','Disparo Mágico em Área', 'Golpe Marcial Elemental','Manipulação','Paralisia',
+                            'Reforço Mágico','Slow','Transformação','Vampirismo'}" field="tipoefeito2"/>
+                		<label left="0" top="0" align="left" text="Efeito: " margins="{left=10;top=15}" width="50" autoSize="true"/>
+                		<label left="0" top="0" align="left" text="efeito " margins="{top=15}" autoSize="true" width="325" field="effect2"/>
+                		<label left="0" top="0" align="left" text="Custo: " margins="{top=15}" autoSize="true" width="50"/>
+                		<label left="0" top="0" align="left" text="custo " margins="{top=15}" autoSize="true" width="20" field="customagia"/>
+                		<label left="0" top="0" align="left" text="Duração: " margins="{left=20;top=15}" autoSize="true" width="75"/>
+                		<label left="0" top="0" align="left" text="duracao " margins="{top=15}" autoSize="true" field="duracao2" width="50"/>
+                		<flowLineBreak/>
+                		
+                		<!--Magia 3 -->
+                		<label left="0" top="0" align="left" text="Nome da Técnica:" margins="{top=15}" autoSize="true"/>
+                		<edit left="0" top="0" align="client" horzTextAlign="leading" margins="{top=10}" width="150" height ="25" field="nometec3"/>
+                		<label left="0" top="0" align="left" text="Tipo de Efeito:" margins="{left=10;top=15}" autoSize="true"/>
+                		<comboBox align="left" left="0" width="175" top="20" margins="{top=15; right=10}" items="{'N/A','Atordoamento','Cegueira',
+                            'Criação e Sustentação','Cura','Disparo Mágico','Disparo Mágico em Área', 'Golpe Marcial Elemental','Manipulação','Paralisia',
+                            'Reforço Mágico','Slow','Transformação','Vampirismo'}" field="tipoefeito3"/>
+                		<label left="0" top="0" align="left" text="Efeito: " margins="{left=10;top=15}" width="50" autoSize="true"/>
+                		<label left="0" top="0" align="left" text="efeito " margins="{top=15}" autoSize="true" width="325" field="effect3"/>
+                		<label left="0" top="0" align="left" text="Custo: " margins="{top=15}" autoSize="true" width="50"/>
+                		<label left="0" top="0" align="left" text="custo " margins="{top=15}" autoSize="true" width="20" field="customagia"/>
+                		<label left="0" top="0" align="left" text="Duração: " margins="{left=20;top=15}" autoSize="true" width="75"/>
+                		<label left="0" top="0" align="left" text="duracao " margins="{top=15}" autoSize="true" field="duracao3" width="50"/>
+                		<flowLineBreak/>
+                		
+                		<!--Magia 4 -->
+                		<label left="0" top="0" align="left" text="Nome da Técnica:" margins="{top=15}" autoSize="true"/>
+                		<edit left="0" top="0" align="client" horzTextAlign="leading" margins="{top=10}" width="150" height ="25" field="nometec4"/>
+                		<label left="0" top="0" align="left" text="Tipo de Efeito:" margins="{left=10;top=15}" autoSize="true"/>
+                		<comboBox align="left" left="0" width="175" top="20" margins="{top=15; right=10}" items="{'N/A','Atordoamento','Cegueira',
+                            'Criação e Sustentação','Cura','Disparo Mágico','Disparo Mágico em Área', 'Golpe Marcial Elemental','Manipulação','Paralisia',
+                            'Reforço Mágico','Slow','Transformação','Vampirismo'}" field="tipoefeito4"/>
+                		<label left="0" top="0" align="left" text="Efeito: " margins="{left=10;top=15}" width="50" autoSize="true"/>
+                		<label left="0" top="0" align="left" text="efeito " margins="{top=15}" autoSize="true" width="325" field="effect4"/>
+                		<label left="0" top="0" align="left" text="Custo: " margins="{top=15}" autoSize="true" width="50"/>
+                		<label left="0" top="0" align="left" text="custo " margins="{top=15}" autoSize="true" width="20" field="customagia"/>
+                		<label left="0" top="0" align="left" text="Duração: " margins="{left=20;top=15}" autoSize="true" width="75"/>
+                		<label left="0" top="0" align="left" text="duracao " margins="{top=15}" autoSize="true" field="duracao4" width="50"/>
+                		<flowLineBreak/>
+
+
+                		<!--Magia 5 -->
+                		<label left="0" top="0" align="left" text="Nome da Técnica:" margins="{top=15}" autoSize="true"/>
+                		<edit left="0" top="0" align="client" horzTextAlign="leading" margins="{top=10}" width="150" height ="25" field="nometec5"/>
+                		<label left="0" top="0" align="left" text="Tipo de Efeito:" margins="{left=10;top=15}" autoSize="true"/>
+                		<comboBox align="left" left="0" width="175" top="20" margins="{top=20; right=10}" items="{'N/A','Atordoamento','Cegueira',
+                            'Criação e Sustentação','Cura','Disparo Mágico','Disparo Mágico em Área', 'Golpe Marcial Elemental','Manipulação','Paralisia',
+                            'Reforço Mágico','Slow','Transformação','Vampirismo'}" field="tipoefeito5"/>
+                		<label left="0" top="0" align="left" text="Efeito: " margins="{left=10;top=15}" width="50" autoSize="true"/>
+                		<label left="0" top="0" align="left" text="efeito " margins="{top=15}" autoSize="true" width="325" field="effect5"/>
+                		<label left="0" top="0" align="left" text="Custo: " margins="{top=15}" autoSize="true" width="50"/>
+                		<label left="0" top="0" align="left" text="custo " margins="{top=15}" autoSize="true" width="20" field="customagia"/>
+                		<label left="0" top="0" align="left" text="Duração: " margins="{left=20;top=15}" autoSize="true" width="75"/>
+                		<label left="0" top="0" align="left" text="duracao " margins="{top=15}" autoSize="true" field="duracao5" width="50"/>
+                		<flowLineBreak/>
+
+                		<!--Magia 6 -->
+                		<label left="0" top="0" align="left" text="Nome da Técnica:" margins="{top=15}" autoSize="true"/>
+                		<edit left="0" top="0" align="client" horzTextAlign="leading" margins="{top=10}" width="150" height ="25" field="nometec6"/>
+                		<label left="0" top="0" align="left" text="Tipo de Efeito:" margins="{left=10;top=15}" autoSize="true"/>
+                		<comboBox align="left" left="0" width="175" top="20" margins="{top=15; right=10}" items="{'N/A','Atordoamento','Cegueira',
+                            'Criação e Sustentação','Cura','Disparo Mágico','Disparo Mágico em Área', 'Golpe Marcial Elemental','Manipulação','Paralisia',
+                            'Reforço Mágico','Slow','Transformação','Vampirismo'}" field="tipoefeito6"/>
+                		<label left="0" top="0" align="left" text="Efeito: " margins="{left=10;top=15}" width="50" autoSize="true"/>
+                		<label left="0" top="0" align="left" text="efeito " margins="{top=15}" autoSize="true" width="325" field="effect6"/>
+                		<label left="0" top="0" align="left" text="Custo: " margins="{top=15}" autoSize="true" width="50"/>
+                		<label left="0" top="0" align="left" text="custo " margins="{top=15}" autoSize="true" width="20" field="customagia"/>
+                		<label left="0" top="0" align="left" text="Duração: " margins="{left=20;top=15}" autoSize="true" width="75"/>
+                		<label left="0" top="0" align="left" text="duracao " margins="{top=15}" autoSize="true" field="duracao6" width="50"/>
+                		<flowLineBreak/>
+
+                		<!--Magia 7 -->
+                		<label left="0" top="0" align="left" text="Nome da Técnica:" margins="{top=15}" autoSize="true"/>
+                		<edit left="0" top="0" align="client" horzTextAlign="leading" margins="{top=10}" width="150" height ="25" field="nometec7"/>
+                		<label left="0" top="0" align="left" text="Tipo de Efeito:" margins="{left=10;top=15}" autoSize="true"/>
+                		<comboBox align="left" left="0" width="175" top="20" margins="{top=15; right=10}" items="{'N/A','Atordoamento','Cegueira',
+                            'Criação e Sustentação','Cura','Disparo Mágico','Disparo Mágico em Área', 'Golpe Marcial Elemental','Manipulação','Paralisia',
+                            'Reforço Mágico','Slow','Transformação','Vampirismo'}" field="tipoefeito7"/>
+                		<label left="0" top="0" align="left" text="Efeito: " margins="{left=10;top=15}" width="50" autoSize="true"/>
+                		<label left="0" top="0" align="left" text="efeito " margins="{top=15}" autoSize="true" width="325" field="effect7"/>
+                		<label left="0" top="0" align="left" text="Custo: " margins="{top=15}" autoSize="true" width="50"/>
+                		<label left="0" top="0" align="left" text="custo " margins="{top=15}" autoSize="true" width="20" field="customagia"/>
+                		<label left="0" top="0" align="left" text="Duração: " margins="{left=20;top=15}" autoSize="true" width="75"/>
+                		<label left="0" top="0" align="left" text="duracao " margins="{top=15}" autoSize="true" field="duracao7" width="50"/>
+                		<flowLineBreak/>
+
+                		<!--Magia 8 -->
+                		<label left="0" top="0" align="left" text="Nome da Técnica:" margins="{top=15}" autoSize="true"/>
+                		<edit left="0" top="0" align="client" horzTextAlign="leading" margins="{top=10}" width="150" height ="25" field="nometec8"/>
+                		<label left="0" top="0" align="left" text="Tipo de Efeito:" margins="{left=10;top=15}" autoSize="true"/>
+                		<comboBox align="left" left="0" width="175" top="20" margins="{top=15; right=10}" items="{'N/A','Atordoamento','Cegueira',
+                            'Criação e Sustentação','Cura','Disparo Mágico','Disparo Mágico em Área', 'Golpe Marcial Elemental','Manipulação','Paralisia',
+                            'Reforço Mágico','Slow','Transformação','Vampirismo'}" field="tipoefeito8"/>
+                		<label left="0" top="0" align="left" text="Efeito: " margins="{left=10;top=15}" width="50" autoSize="true"/>
+                		<label left="0" top="0" align="left" text="efeito " margins="{top=15}" autoSize="true" width="325" field="effect8"/>
+                		<label left="0" top="0" align="left" text="Custo: " margins="{top=15}" autoSize="true" width="50"/>
+                		<label left="0" top="0" align="left" text="custo " margins="{top=15}" autoSize="true" width="20" field="customagia"/>
+                		<label left="0" top="0" align="left" text="Duração: " margins="{left=20;top=15}" autoSize="true" width="75"/>
+                		<label left="0" top="0" align="left" text="duracao " margins="{top=15}" autoSize="true" field="duracao8" width="50"/>
+                		<flowLineBreak/>
+
+                		<!--Magia 9 -->
+                		<label left="0" top="0" align="left" text="Nome da Técnica:" margins="{top=15}" autoSize="true"/>
+                		<edit left="0" top="0" align="client" horzTextAlign="leading" margins="{top=10}" width="150" height ="25" field="nometec9"/>
+                		<label left="0" top="0" align="left" text="Tipo de Efeito:" margins="{left=10;top=15}" autoSize="true"/>
+                		<comboBox align="left" left="0" width="175" top="20" margins="{top=15; right=10}" items="{'N/A','Atordoamento','Cegueira',
+                            'Criação e Sustentação','Cura','Disparo Mágico','Disparo Mágico em Área', 'Golpe Marcial Elemental','Manipulação','Paralisia',
+                            'Reforço Mágico','Slow','Transformação','Vampirismo'}" field="tipoefeito9"/>
+                		<label left="0" top="0" align="left" text="Efeito: " margins="{left=10;top=15}" width="50" autoSize="true"/>
+                		<label left="0" top="0" align="left" text="efeito " margins="{top=15}" autoSize="true" width="325" field="effect9"/>
+                		<label left="0" top="0" align="left" text="Custo: " margins="{top=15}" autoSize="true" width="50"/>
+                		<label left="0" top="0" align="left" text="custo " margins="{top=15}" autoSize="true" width="20" field="customagia"/>
+                		<label left="0" top="0" align="left" text="Duração: " margins="{left=20;top=15}" autoSize="true" width="75"/>
+                		<label left="0" top="0" align="left" text="duracao " margins="{top=15}" autoSize="true" field="duracao9" width="50"/>
+                		<flowLineBreak/>
+
+                		<!--Magia 10 -->
+                		<label left="0" top="0" align="left" text="Nome da Técnica:" margins="{top=15}" autoSize="true"/>
+                		<edit left="0" top="0" align="client" horzTextAlign="leading" margins="{top=10}" width="150" height ="25" field="nometec10"/>
+                		<label left="0" top="0" align="left" text="Tipo de Efeito:" margins="{left=10;top=15}" autoSize="true"/>
+                		<comboBox align="left" left="0" width="175" top="20" margins="{top=15; right=10}" items="{'N/A','Atordoamento','Cegueira',
+                            'Criação e Sustentação','Cura','Disparo Mágico','Disparo Mágico em Área', 'Golpe Marcial Elemental','Manipulação','Paralisia',
+                            'Reforço Mágico','Slow','Transformação','Vampirismo'}" field="tipoefeito10"/>
+                		<label left="0" top="0" align="left" text="Efeito: " margins="{left=10;top=15}" width="50" autoSize="true"/>
+                		<label left="0" top="0" align="left" text="efeito " margins="{top=15}" autoSize="true" width="325" field="effect10"/>
+                		<label left="0" top="0" align="left" text="Custo: " margins="{top=15}" autoSize="true" width="50"/>
+                		<label left="0" top="0" align="left" text="custo " margins="{top=15}" autoSize="true" width="20" field="customagia"/>
+                		<label left="0" top="0" align="left" text="Duração: " margins="{left=20;top=15}" autoSize="true" width="75"/>
+                		<label left="0" top="0" align="left" text="duracao " margins="{top=15}" autoSize="true" field="duracao10" width="50"/>
+                		<flowLineBreak/>
+
+                		<!--Magia 11 -->
+                		<label left="0" top="0" align="left" text="Nome da Técnica:" margins="{top=15}" autoSize="true"/>
+                		<edit left="0" top="0" align="client" horzTextAlign="leading" margins="{top=10}" width="150" height ="25" field="nometec11"/>
+                		<label left="0" top="0" align="left" text="Tipo de Efeito:" margins="{left=10;top=15}" autoSize="true"/>
+                		<comboBox align="left" left="0" width="175" top="20" margins="{top=15; right=10}" items="{'N/A','Atordoamento','Cegueira',
+                            'Criação e Sustentação','Cura','Disparo Mágico','Disparo Mágico em Área', 'Golpe Marcial Elemental','Manipulação','Paralisia',
+                            'Reforço Mágico','Slow','Transformação','Vampirismo'}" field="tipoefeito11"/>
+                		<label left="0" top="0" align="left" text="Efeito: " margins="{left=10;top=15}" width="50" autoSize="true"/>
+                		<label left="0" top="0" align="left" text="efeito " margins="{top=15}" autoSize="true" width="325" field="effect11"/>
+                		<label left="0" top="0" align="left" text="Custo: " margins="{top=15}" autoSize="true" width="50"/>
+                		<label left="0" top="0" align="left" text="custo " margins="{top=15}" autoSize="true" width="20" field="customagia"/>
+                		<label left="0" top="0" align="left" text="Duração: " margins="{left=20;top=15}" autoSize="true" width="75"/>
+                		<label left="0" top="0" align="left" text="duracao " margins="{top=15}" autoSize="true" field="duracao11" width="50"/>
+                		<flowLineBreak/>
+
+                		<!--Magia 12 -->
+                		<label left="0" top="0" align="left" text="Nome da Técnica:" margins="{top=15}" autoSize="true"/>
+                		<edit left="0" top="0" align="client" horzTextAlign="leading" margins="{top=10}" width="150" height ="25" field="nometec12"/>
+                		<label left="0" top="0" align="left" text="Tipo de Efeito:" margins="{left=10;top=15}" autoSize="true"/>
+                		<comboBox align="left" left="0" width="175" top="20" margins="{top=15; right=10}" items="{'N/A','Atordoamento','Cegueira',
+                            'Criação e Sustentação','Cura','Disparo Mágico','Disparo Mágico em Área', 'Golpe Marcial Elemental','Manipulação','Paralisia',
+                            'Reforço Mágico','Slow','Transformação','Vampirismo'}" field="tipoefeito12"/>
+                		<label left="0" top="0" align="left" text="Efeito: " margins="{left=10;top=15}" width="50" autoSize="true" />
+                		<label left="0" top="0" align="left" text="efeito " margins="{top=15}" autoSize="true" width="325" field="effect12"/>
+                		<label left="0" top="0" align="left" text="Custo: " margins="{top=15}" autoSize="true" width="50"/>
+                		<label left="0" top="0" align="left" text="custo " margins="{top=15}" autoSize="true" width="20" field="customagia"/>
+                		<label left="0" top="0" align="left" text="Duração: " margins="{left=20;top=15}" autoSize="true" width="75"/>
+                		<label left="0" top="0" align="left" text="duracao " margins="{top=15}" autoSize="true" field="duracao12" width="50"/>
+                		<flowLineBreak/>
+
+                		<!--Magia 13 -->
+                		<label left="0" top="0" align="left" text="Nome da Técnica:" margins="{top=15}" autoSize="true"/>
+                		<edit left="0" top="0" align="client" horzTextAlign="leading" margins="{top=10}" width="150" height ="25" field="nometec13"/>
+                		<label left="0" top="0" align="left" text="Tipo de Efeito:" margins="{left=10;top=15}" autoSize="true"/>
+                		<comboBox align="left" left="0" width="175" top="20" margins="{top=15; right=10}" items="{'N/A','Atordoamento','Cegueira',
+                            'Criação e Sustentação','Cura','Disparo Mágico','Disparo Mágico em Área', 'Golpe Marcial Elemental','Manipulação','Paralisia',
+                            'Reforço Mágico','Slow','Transformação','Vampirismo'}" field="tipoefeito13"/>
+                		<label left="0" top="0" align="left" text="Efeito: " margins="{left=10;top=15}" width="50" autoSize="true"/>
+                		<label left="0" top="0" align="left" text="efeito " margins="{top=15}" autoSize="true" width="325" field="effect13"/>
+                		<label left="0" top="0" align="left" text="Custo: " margins="{top=15}" autoSize="true" width="50"/>
+                		<label left="0" top="0" align="left" text="custo " margins="{top=15}" autoSize="true" width="20" field="customagia"/>
+                		<label left="0" top="0" align="left" text="Duração: " margins="{left=20;top=15}" autoSize="true" width="75"/>
+                		<label left="0" top="0" align="left" text="duracao " margins="{top=15}" autoSize="true" field="duracao13" width="50"/>
+                		<flowLineBreak/>
+
+                		<!--Magia 14 -->
+                		<label left="0" top="0" align="left" text="Nome da Técnica:" margins="{top=15}" autoSize="true"/>
+                		<edit left="0" top="0" align="client" horzTextAlign="leading" margins="{top=10}" width="150" height ="25" field="nometec14"/>
+                		<label left="0" top="0" align="left" text="Tipo de Efeito:" margins="{left=10;top=15}" autoSize="true"/>
+                		<comboBox align="left" left="0" width="175" top="20" margins="{top=15; right=10}" items="{'N/A','Atordoamento','Cegueira',
+                            'Criação e Sustentação','Cura','Disparo Mágico','Disparo Mágico em Área', 'Golpe Marcial Elemental','Manipulação','Paralisia',
+                            'Reforço Mágico','Slow','Transformação','Vampirismo'}" field="tipoefeito14"/>
+                		<label left="0" top="0" align="left" text="Efeito: " margins="{left=10;top=15}" width="50" autoSize="true"/>
+                		<label left="0" top="0" align="left" text="efeito " margins="{top=15;}" autoSize="true" width="325" field="effect14"/>
+                		<label left="0" top="0" align="left" text="Custo: " margins="{top=15}" autoSize="true" width="50"/>
+                		<label left="0" top="0" align="left" text="custo " margins="{top=15}" autoSize="true" width="20" field="customagia"/>
+                		<label left="0" top="0" align="left" text="Duração: " margins="{left=20;top=15}" autoSize="true" width="75"/>
+                		<label left="0" top="0" align="left" text="duracao " margins="{top=15}" autoSize="true" field="duracao14" width="50"/>
+                		<flowLineBreak/>
+ 						
+ 	            	</flowLayout>	
+                </tab>
+
+               
+                <tab title="Espaço Livre">
+                	<flowLayout left="30" top="0" width="1200" height="3000"> 
+                		<label left="0" top="0" align="left" fontSize="20"  fontFamily="Copperplate Gothic" text="Espaço Livre" margins="{left=500;}" width="200" height="30" />
+                		<flowLineBreak/>
+                		
+                	<richEdit align="client" width="1100" height="550" backgroundColor="Black" defaultFontColor="white" field="espacoLivre"/>	
+
+                	</flowLayout>
+                </tab>
+                <tab title= "Créditos e Versão">
+                	<flowLayout left="20" top="0" width="1200" height="3000"> 
+                		<image left="20" top="20" margins="{left=20}" width="350" height="350" src="/imgs/tyger.png"/>
+                		<flowLineBreak/>
+                		<label left="0" top="0" align="left" fontFamily="Bauhaus 93" fontSize="40" text="Créditos" margins="{left=500;}" width="300" height="45"/>
+                		<flowLineBreak/>
+                		<label left="0" top="0" align="left" fontFamily="Bauhaus 93" text="Ficha: Fairy Tail - The World is Yours (mob)" margins="{top=10;left=470}" width="300"/>
+                		<flowLineBreak/>
+                		<label left="0" top="0" align="left" fontFamily="Bauhaus 93" text="Versão: 1.0" margins="{top=10;left=470}" width="300"/>
+                		<flowLineBreak/>
+                		<label left="0" top="0" align="left" fontFamily="Bauhaus 93" text="Criador: WhiteTiger" margins="{top=10;left=470}" width="300"/>
+                		<flowLineBreak/>
+                		<label left="0" top="0" align="left" fontFamily="Bauhaus 93" text="Contato: whitetigerdevs@gmail.com" margins="{top=10;left=470}" width="300"/>
+                	</flowLayout>
+                	 
+                </tab>
+
+
+
+</tabControl>
+
+
+<!--Função Bonus Racial-->>
+<dataLink fields="{'bonusRF','bonusDES','bonusRM','bonusINT','bonusFF','bonusFM','mob'}">
+             <event name="onChange">
+               local bonusRACA = sheet.mob
+               if bonusRACA == 'Humano' then
+               		sheet.bonusRF = 0
+               		sheet.bonusDES = 0
+               		sheet.bonusRM = 1
+               		sheet.bonusINT = 1
+               		sheet.bonusFF = 0
+               		sheet.bonusFM = 0
+               elseif bonusRACA == 'Demônio' then
+               		sheet.bonusRF = 0
+               		sheet.bonusDES = 0
+               		sheet.bonusRM = 1
+               		sheet.bonusINT = 0
+               		sheet.bonusFF = 0
+               		sheet.bonusFM = 1
+               	elseif bonusRACA == 'Besta' then	
+              		sheet.bonusRF = 1
+               		sheet.bonusDES = 1
+               		sheet.bonusRM = 0
+               		sheet.bonusINT = -1
+               		sheet.bonusFF = 2
+               		sheet.bonusFM = 0
+               	elseif bonusRACA == 'Drow' then
+               		sheet.bonusRF = -1
+               		sheet.bonusDES = 0
+               		sheet.bonusRM = 0
+               		sheet.bonusINT = 2
+               		sheet.bonusFF = -1
+               		sheet.bonusFM = 2
+                elseif bonusRACA == 'Espectro' then
+                    sheet.bonusRF = 0
+                    sheet.bonusDES = 0
+                    sheet.bonusRM = 2
+                    sheet.bonusINT = 0
+                    sheet.bonusFF = -2
+                    sheet.bonusFM =  2
+                elseif bonusRACA == 'Fada' then
+                    sheet.bonusRF = -1 
+                    sheet.bonusDES = 2
+                    sheet.bonusRM = 2
+                    sheet.bonusINT = 0
+                    sheet.bonusFF = -3
+                    sheet.bonusFM =  2
+                elseif bonusRACA == 'Gigante' then
+                    sheet.bonusRF = 2 
+                    sheet.bonusDES = -2
+                    sheet.bonusRM = 0
+                    sheet.bonusINT =0
+                    sheet.bonusFF = 4
+                    sheet.bonusFM = -2
+                elseif bonusRACA == 'Humanoides' then
+                    sheet.bonusRF = 3 
+                    sheet.bonusDES = 0
+                    sheet.bonusRM = -1
+                    sheet.bonusINT = -1
+                    sheet.bonusFF = 3
+                    sheet.bonusFM = -2
+                elseif bonusRACA == 'Insetos' then
+                    sheet.bonusRF = -2 
+                    sheet.bonusDES = 3
+                    sheet.bonusRM = -2
+                    sheet.bonusINT = 1
+                    sheet.bonusFF = 1
+                    sheet.bonusFM = 2
+                elseif bonusRACA == 'Robôs' then
+                    sheet.bonusRF = -1 
+                    sheet.bonusDES = 0
+                    sheet.bonusRM = -1
+                    sheet.bonusINT = 2
+                    sheet.bonusFF = -2
+                    sheet.bonusFM =  4		
+               else
+               		sheet.bonusRF = 0
+               		sheet.bonusDES = 0
+               		sheet.bonusRM = 0
+               		sheet.bonusINT = 0
+               		sheet.bonusFF = 0
+               		sheet.bonusFM = 0
+               end	
+               
+	        </event>
+</dataLink>
+
+<!--Função Total Atributo-->
+<dataLink fields="{'resfisica', 'bonusRF', 'destreza','bonusDES','resmagica','bonusRM','inteligencia','bonusINT','forcafisica','bonusFF','forcamagica','bonusFM',
+	'OBRF','OBDES','OBINT','OBRM','OBFF','OBFM','totalRF','totalDES','totalINT','totalRM','totalFF','totalFM'">
+	        <event name="onChange">
+	        	sheet.totalRF = (tonumber(sheet.resfisica) or 0) + (tonumber(sheet.bonusRF) or 0) + (tonumber(sheet.OBRF) or 0)
+	        	sheet.totalDES = (tonumber(sheet.destreza) or 0) + (tonumber(sheet.bonusDES) or 0) + (tonumber(sheet.OBDES) or 0)
+	        	sheet.totalINT = (tonumber(sheet.inteligencia) or 0) + (tonumber(sheet.bonusINT) or 0) + (tonumber(sheet.OBINT) or 0)
+	        	sheet.totalRM = (tonumber(sheet.resmagica) or 0) + (tonumber(sheet.bonusRM) or 0) + (tonumber(sheet.OBRM) or 0)
+	        	sheet.totalFF = (tonumber(sheet.forcafisica) or 0) + (tonumber(sheet.bonusFF) or 0) + (tonumber(sheet.OBFF) or 0)
+				sheet.totalFM = (tonumber(sheet.forcamagica) or 0) + (tonumber(sheet.bonusFM) or 0) + (tonumber(sheet.OBFM) or 0) 
+
+	        </event>
+</dataLink>
+
+<!--Função CAF E CAM --> 
+<dataLink fields="{'bcaf', 'bcam', 'cam','caf'}">
+             <event name="onChange">
+               sheet.caf = (tonumber(sheet.bcaf) or 0) + 10
+               sheet.cam = (tonumber(sheet.bcam) or 0) + 10
+            </event>
+</dataLink>
+
+<!--Função HP --> 
+<dataLink fields="{'resfisica','bonusRF','hp','nomeVant','nomeVant2','nomeVant3','nomeVant4','nomeVant5','nomeVant6','nomeVant7',
+    'nomeVant8','nomeVant9','nomeVant10'}">
+             <event name="onChange">
+                 local I = sheet.nomeVant
+                 local II = sheet.nomeVant2
+                 local III = sheet.nomeVant3
+                 local IV = sheet.nomeVant4
+                 local V = sheet.nomeVant5
+                 local VI = sheet.nomeVant6
+                 local VII = sheet.nomeVant7
+                 local VIII = sheet.nomeVant8
+                 local IX = sheet.nomeVant9
+                 local X = sheet.nomeVant10
+
+                function gerarBonusHP(x)
+                     if x == 'Pontos de HP Extras' then
+                         return 10
+                     else
+                         return 0
+                     end
+                end
+
+                BonusV = gerarBonusHP(I) + gerarBonusHP(II) + gerarBonusHP(III) + gerarBonusHP(IV) + gerarBonusHP(V) + gerarBonusHP(VI) + gerarBonusHP(VII) + gerarBonusHP(VIII) + gerarBonusHP(IX) + gerarBonusHP(X)
+
+
+               sheet.hp = (((tonumber(sheet.resfisica) or 0) +
+               				(tonumber(sheet.bonusRF) or 0)) * 10) + (tonumber(BonusV) or 0)
+             </event>
+</dataLink> 
+<!--Função Mana --> 
+<dataLink fields="{'resmagica','bonusRM','mana','nomeVant','nomeVant2','nomeVant3','nomeVant4','nomeVant5','nomeVant6','nomeVant7',
+    'nomeVant8','nomeVant9','nomeVant10'}">
+             <event name="onChange">
+                 local I = sheet.nomeVant
+                 local II = sheet.nomeVant2
+                 local III = sheet.nomeVant3
+                 local IV = sheet.nomeVant4
+                 local V = sheet.nomeVant5
+                 local VI = sheet.nomeVant6
+                 local VII = sheet.nomeVant7
+                 local VIII = sheet.nomeVant8
+                 local IX = sheet.nomeVant9
+                 local X = sheet.nomeVant10
+
+                   function gerarBonusMana(x)
+                    if x == 'Pontos de Mana Extras' then
+                        return 10
+                    else
+                        return 0
+                    end
+                  end
+
+                    BonusM = gerarBonusMana(I) + gerarBonusMana(II) + gerarBonusMana(III) + gerarBonusMana(IV) + gerarBonusMana(V) + gerarBonusMana(VI) + gerarBonusMana(VII) + gerarBonusMana(VIII) + gerarBonusMana(IX) + gerarBonusMana(X)
+
+
+
+               sheet.mana = (((tonumber(sheet.resmagica) or 0)+(tonumber(sheet.bonusRM) or 0)) * 10) + (tonumber(BonusV) or 0)
+             </event>
+</dataLink> 
+
+
+
+
+<!-- Função Gerar Descrição Vantagem -->
+<dataLink fields="{'nomeVant','nomeVant2','nomeVant3','nomeVant4','nomeVant5','nomeVant6','nomeVant7',
+    'nomeVant8','nomeVant9','nomeVant10','descricaoVant','descricaoVant2','descricaoVant3','descricaoVant4',
+    'descricaoVant5','descricaoVant6','descricaoVant7','descricaoVant8','descricaoVant9','descricaoVant10'}">
+    <event name="onChange"> 
+        local VI = sheet.nomeVant
+        local VII = sheet.nomeVant2
+        local VIII = sheet.nomeVant3
+        local VIV = sheet.nomeVant4
+        local VV = sheet.nomeVant5
+        local VVI = sheet.nomeVant6
+        local VVII = sheet.nomeVant7
+        local VVIII = sheet.nomeVant8
+        local VIX = sheet.nomeVant9
+        local VX = sheet.nomeVant10
+
+
+        function gerarDescricao(x) 
+            if x == 'Acerto' then
+                y = 'Você ganha +1 em testes de acerto quando for atacar.'
+                return y
+            elseif x == 'Alma Gêmea' then
+                y = 'O personagem possui uma ligação especial com outra pessoa desse mundo.' 
+                return y
+            elseif x == 'Ambidestria' then
+                y = 'Garante +1 em Destreza.' 
+                return y
+            elseif  x == 'Ambiente Favorável 1' then   
+                y = 'O mago se torna mais poderoso durante uma situação rara.'
+                return y
+            elseif  x == 'Ambiente Favorável 2' then   
+                y = 'O mago se torna mais poderoso durante uma situação incomum.'
+                return y
+            elseif  x == 'Ambiente Favorável 3' then   
+                y = 'O mago se torna mais poderoso durante uma situação comum.'
+                return y
+            elseif  x == 'Amor Polígamo' then   
+                y = 'Você está envolvido em um harém, trisal e afins.'
+                return y
+            elseif  x == 'Amor Verdadeiro' then   
+                y = 'Você ama verdadeiramente alguém e nada abalará isso.'
+                return y 
+            elseif  x == 'Aparência Inofensiva' then   
+                y = 'Você ganha um bônus de +1 de inteligência e +1 em Iniciativa.'
+                return y
+            elseif  x == 'Arma de Fogo 1' then   
+                y = 'O Personagem Possui Pistolas.'
+                return y   
+            elseif  x == 'Arma de Fogo 2' then   
+                y = 'O Personagem Possui uma Magnum.'
+                return y
+            elseif  x == 'Arma de Fogo 3' then   
+                y = 'O Personagem Possui uma Escopeta.'
+                return y    
+            elseif  x == 'Bom Senso' then   
+                y = 'O mestre pode orientar o player indiretamente.'
+                return y
+            elseif x == 'Conhecimentos Arcanos' then   
+                y = 'Você recebe um bônus de +2 em Inteligência.'
+                return y    
+            elseif x == 'Contatos e Aliados 1' then   
+                y = 'O Personagem tem um aliado importante.'
+                return y    
+            elseif x == 'Contatos e Aliados 2' then
+                y = 'O Personagem tem dois aliados importantes.'
+                return y     
+            elseif x == 'Contatos e Aliados 3' then
+                y = 'O Personagem tem três aliados importantes.'
+                return y
+            elseif x == 'Contatos e Aliados 4' then
+                y = 'O Personagem tem quatro aliados importantes.'
+                return y
+            elseif x == 'Coração de Pedra' then
+                y = 'Você recebe mais +2 de Inteligência para resistir a controle mental.'
+                return y
+            elseif x == 'Detectar Magia 1' then
+                y = 'O personagem pode detecta-la em objetos, materiais, locais ou criaturas.'
+                return y 
+            elseif x == 'Detectar Magia 2' then
+                y = 'Além do Detectar Magia 1, pode localizar a direção, distância e intensidade.'
+                return y 
+            elseif x == 'Dívida de Gratidão 1' then
+                y ='Alguém lhe deve alguns favores menores, sem que isso o comprometa.'
+                return y
+            elseif x == 'Dívida de Gratidão 2' then
+                y ='A dívida lhe vale favores maiores e quem lhe deve irá ajuda-lo em situações perigosas.'
+                return y
+            elseif x == 'Dívida de Gratidão 3' then
+                y = 'Alguém lhe deve a vida, e fará de tudo para ajudá lo. '
+                return y
+            elseif x == 'Empatia com Animais' then
+                y = 'Os animais não vêem ameaça alguma no personagem.'
+                return y
+            elseif x == 'Fama 1' then
+                y = 'Você é reconhecido em um bairro'
+                return y
+            elseif x == 'Fama 2' then
+                y = 'Você é reconhecido em alguns bairros ou em uma pequena cidade ou vila.'
+                return y
+            elseif x == 'Fama 3' then
+                y = 'Você é reconhecido em algumas cidades ou uma Metrópole.'
+                return y
+            elseif x == 'Fama 4' then
+                y = 'Você é reconhecido em algumas metrópoles ou um Reino inteiro.'
+                return y
+            elseif x == 'Família ou Mentor Honrado' then
+                y = 'A sua família ou seu mentor é famoso, exaltados pela população.'
+                return y
+            elseif x == 'Identidade Secreta' then
+                y = 'O Personagem possui uma identidade totalmente falsa.'
+                return y
+            elseif x == 'Improvisador 1' then
+                y = 'Você é capaz arquitetar pequenas coisas.'
+                return y
+            elseif x == 'Improvisador 2' then
+                y = 'O Personagem pode resolver problemas como o MacGyver.'
+                return y
+            elseif x == 'Influência Política/Burocrática 1' then
+                y = 'O personagem influencia um bairro, sindicato ou estação local.'
+                return y
+            elseif x == 'Influência Política/Burocrática 2' then
+                y = 'O personagem influencia alguns bairros, uma cidade pequena.'
+                return y
+            elseif x == 'Influência Política/Burocrática 3' then
+                y = 'O personagem influencia algumas cidades pequenas, uma metrópole.'
+                return y
+            elseif x == 'Influência Política/Burocrática 4' then
+                y = 'O personagem influencia algumas metrópoles, um estado.'
+                return y
+            elseif x == 'Influência Política/Burocrática 5' then
+                y = 'O personagem influencia dois ou três estados, um pequeno pais.'
+                return y
+            elseif x == 'Influência Jurisprudente 1' then
+                y = 'O personagem influencia um bairro, sindicato ou estação local.'
+                return y
+            elseif x == 'Influência Jurisprudente 2' then
+                y = 'O personagem influencia alguns bairros, uma cidade pequena.'
+                return y
+            elseif x == 'Influência Jurisprudente 3' then
+                y = 'O personagem influencia algumas cidades pequenas, uma metrópole.'
+                return y
+            elseif x == 'Influência Jurisprudente 4' then
+                y = 'O personagem influencia algumas metrópoles, um estado.'
+                return y
+            elseif x == 'Influência Jurisprudente 5' then
+                y = 'O personagem influencia dois ou três estados, um pequeno pais.'
+                return y    
+            elseif x == 'Influência Eclesiástica 1' then
+                y = 'O personagem influencia um bairro, sindicato ou estação local.'
+                return y
+            elseif x == 'Influência Eclesiástica 2' then
+                y = 'O personagem influencia alguns bairros, uma cidade pequena.'
+                return y
+            elseif x == 'Influência Eclesiástica 3' then
+                y = 'O personagem influencia algumas cidades pequenas, uma metrópole.'
+                return y
+            elseif x == 'Influência Eclesiástica 4' then
+                y = 'O personagem influencia algumas metrópoles, um estado.'
+                return y
+            elseif x == 'Influência Eclesiástica 5' then
+                y = 'O personagem influencia dois ou três estados, um pequeno pais.'
+                return y
+            elseif x == 'Influência Econômica 1' then
+                y = 'O personagem influencia um bairro, sindicato ou estação local.'
+                return y
+            elseif x == 'Influência Econômica 2' then
+                y = 'O personagem influencia alguns bairros, uma cidade pequena.'
+                return y
+            elseif x == 'Influência Econômica 3' then
+                y = 'O personagem influencia algumas cidades pequenas, uma metrópole.'
+                return y
+            elseif x == 'Influência Econômica 4' then
+                y = 'O personagem influencia algumas metrópoles, um estado.'
+                return y
+            elseif x == 'Influência Econômica 5' then
+                y = 'O personagem influencia dois ou três estados, um pequeno pais.'
+                return y    
+            elseif x == 'Influência Midiática 1' then
+                y = 'O personagem influencia um bairro, sindicato ou estação local.'
+                return y
+            elseif x == 'Influência Midiática 2' then
+                y = 'O personagem influencia alguns bairros, uma cidade pequena.'
+                return y
+            elseif x == 'Influência Midiática 3' then
+                y = 'O personagem influencia algumas cidades pequenas, uma metrópole.'
+                return y
+            elseif x == 'Influência Midiática 4' then
+                y = 'O personagem influencia algumas metrópoles, um estado.'
+                return y
+            elseif x == 'Influência Midiática 5' then
+                y = 'O personagem influencia dois ou três estados, um pequeno pais.'
+                return y
+            elseif x == 'Infravisão' then
+                y = ' O personagem enxerga no escuro através do calor dos corpos.'
+                return y
+            elseif x == 'Iniciativa Aprimorada' then
+                y = 'Você não pode ser surpreendido sempre tendo direito a rolar iniciativa ou esquiva.'
+                return y
+            elseif x == 'Medicina' then
+                y = 'Você consegue curar com mais efetividade, gerando um bônus de +2 em Cura.'
+                return y
+            elseif x == 'Patrono' then
+                y = 'Um patrono é alguém ou uma organização para qual o Personagem trabalha.'
+                return y
+            elseif x == 'Pechincheiro' then
+                y = 'Você consegue barganhar entre 10-25% isso determinado por um roll 1d15+10.'
+                return y
+            elseif x == 'Pontos de HP Extras' then
+                y = ' Você recebe mais 10 de HP.'
+                return y
+            elseif x == 'Pontos de Mana Extras' then
+                y = ' Você recebe mais 10 de Mana.'
+                return y
+            elseif x == 'Precognição' then
+                y = 'Você recebe +2 na iniciativa por estar com os instintos à flor da pele'
+                return y
+            elseif x == 'Resistência a Dor' then
+                y = 'O personagem mantêm-se consciente mesmo quando sua HP for 0, só irá cair a -5.'
+                return y
+            elseif x == 'Sentidos Aguçados (Visão)' then
+                y = 'O Personagem possui sentidos mais aguçados do que os outros Personagens.'
+                return y
+            elseif x == 'Sentidos Aguçados (Tato)' then
+                y = 'O Personagem possui sentidos mais aguçados do que os outros Personagens.'
+                return y
+            elseif x == 'Sentidos Aguçados (Olfato)' then
+                y = 'O Personagem possui sentidos mais aguçados do que os outros Personagens.'
+                return y
+            elseif x == 'Sentidos Aguçados (Paladar)' then
+                y = 'O Personagem possui sentidos mais aguçados do que os outros Personagens.'
+                return y
+            elseif x == 'Sentidos Aguçados (Audição)' then
+                y = 'O Personagem possui sentidos mais aguçados do que os outros Personagens.'
+                return y
+            elseif x == 'Sortudo 1' then 
+                y = 'O Jogador pode rolar novamente, apenas uma vez, um dado se falhou em um teste.'
+                return y
+            elseif x == 'Sortudo 2' then
+                y = 'Você tem o direito de declarar que um roll teve acerto critico, uma vez por sessão.'
+                return y
+            elseif x == 'Torcida' then
+                y = 'Você tem fãs, e eles inspiram suas lutas! Você ganha +1 Int.'
+                return y 
+            elseif x == 'Visão Noturna' then
+                y = 'O personagem pode ver no escuro sem sofrer qualquer penalidade de ambiente.'
+                return y
+            else
+                y = 'N/A'
+                return y
+            end
+        end
+        
+        sheet.descricaoVant = gerarDescricao(VI)
+        sheet.descricaoVant2 = gerarDescricao(VII)
+        sheet.descricaoVant3 = gerarDescricao(VIII)
+        sheet.descricaoVant4 = gerarDescricao(VIV)
+        sheet.descricaoVant5 = gerarDescricao(VV)
+        sheet.descricaoVant6 = gerarDescricao(VVI)
+        sheet.descricaoVant7 = gerarDescricao(VVII)
+        sheet.descricaoVant8 = gerarDescricao(VVIII)
+        sheet.descricaoVant9 = gerarDescricao(VIX)
+        sheet.descricaoVant10 = gerarDescricao(VX)
+     </event>   
+</dataLink>
+
+<!-- Contar Custo Vantagens -->
+<dataLink fields="{'nomeVant','nomeVant2','nomeVant3','nomeVant4','nomeVant5','nomeVant6','nomeVant7',
+    'nomeVant8','nomeVant9','nomeVant10','custoVant','custoVant2','custoVant3','custoVant4','custoVant5','custoVant6',
+    'custoVant7','custoVant8','custoVant9','custoVant10'}">
+    <event name="onChange">
+  	    
+        function gerarCustoVant(x)
+            if x == 'Acerto' then
+                y = 1
+                return y
+            elseif x == 'Alma Gêmea' then
+                y = 3
+                return y
+            elseif x == 'Ambidestria' then
+                y = 2 
+                return y
+            elseif  x == 'Ambiente Favorável 1' then   
+                y = 1
+                return y
+            elseif  x == 'Ambiente Favorável 2' then   
+                y = 2
+                return y
+            elseif  x == 'Ambiente Favorável 3' then   
+                y = 3
+                return y 
+            elseif  x == 'Amor Polígamo' then   
+                y = 3
+                return y
+            elseif  x == 'Amor Verdadeiro' then   
+                y = 1
+                return y
+            elseif  x == 'Aparência Inofensiva' then   
+                y = 1
+                return y
+            elseif  x == 'Arma de Fogo 1' then   
+                y = 1
+                return y   
+            elseif  x == 'Arma de Fogo 2' then   
+                y = 2
+                return y
+            elseif  x == 'Arma de Fogo 3' then   
+                y = 3
+                return y    
+            elseif  x == 'Bom Senso' then   
+                y = 1
+                return y
+            elseif  x == 'Conhecimentos Arcanos' then   
+                y = 2
+                return y    
+            elseif x == 'Contatos e Aliados 1' then   
+                y = 1
+                return y    
+            elseif x == 'Contatos e Aliados 2' then
+                y = 2
+                return y     
+            elseif x == 'Contatos e Aliados 3' then
+                y = 3
+                return y
+            elseif x == 'Contatos e Aliados 4' then
+                y = 4
+                return y
+            elseif x == 'Coração de Pedra' then 
+                y = 1
+                return y
+            elseif x == 'Detectar Magia 1' then
+                y = 2
+                return y 
+            elseif x == 'Detectar Magia 2' then
+                y = 3
+                return y 
+            elseif x == 'Dívida de Gratidão 1' then
+                y = 1
+                return y
+            elseif x == 'Dívida de Gratidão 2' then
+                y = 2
+                return y
+            elseif x == 'Dívida de Gratidão 3' then
+                y = 3
+                return y
+            elseif x == 'Empatia com Animais' then
+                y = 1
+                return y
+            elseif x == 'Fama 1' then
+                y = 1
+                return y
+            elseif x == 'Fama 2' then
+                y = 2
+                return y
+            elseif x == 'Fama 3' then
+                y = 3
+                return y
+            elseif x == 'Fama 4' then
+                y = 4
+                return y
+            elseif x == 'Família ou Mentor Honrado' then
+                y = 1
+                return y
+            elseif x == 'Identidade Secreta' then
+                y = 1
+                return y
+            elseif x == 'Improvisador 1' then
+                y = 1
+                return y
+            elseif x == 'Improvisador 2' then
+                y = 2
+                return y
+            elseif x == 'Influência Política/Burocrática 1' then
+                y = 1
+                return y
+            elseif x == 'Influência Política/Burocrática 2' then
+                y = 2
+                return y
+            elseif x == 'Influência Política/Burocrática 3' then
+                y = 3
+                return y
+            elseif x == 'Influência Política/Burocrática 4' then
+                y = 4
+                return y
+            elseif x == 'Influência Política/Burocrática 5' then
+                y = 5
+                return y
+            elseif x == 'Influência Jurisprudente 1' then
+                y = 1
+                return y
+            elseif x == 'Influência Jurisprudente 2' then
+                y = 2
+                return y
+            elseif x == 'Influência Jurisprudente 3' then
+                y = 3
+                return y
+            elseif x == 'Influência Jurisprudente 4' then
+                y = 4
+                return y
+            elseif x == 'Influência Jurisprudente 5' then
+                y = 5
+                return y    
+            elseif x == 'Influência Eclesiástica 1' then
+                y = 1
+                return y
+            elseif x == 'Influência Eclesiástica 2' then
+                y = 2
+                return y
+            elseif x == 'Influência Eclesiástica 3' then
+                y = 3
+                return y
+            elseif x == 'Influência Eclesiástica 4' then
+                y = 4
+                return y
+            elseif x == 'Influência Eclesiástica 5' then
+                y = 5
+                return y
+            elseif x == 'Influência Econômica 1' then
+                y = 1
+                return y
+            elseif x == 'Influência Econômica 2' then
+                y = 2
+                return y
+            elseif x == 'Influência Econômica 3' then
+                y = 3
+                return y
+            elseif x == 'Influência Econômica 4' then
+                y = 4
+                return y
+            elseif x == 'Influência Econômica 5' then
+                y = 5
+                return y    
+            elseif x == 'Influência Midiática 1' then
+                y = 1
+                return y
+            elseif x == 'Influência Midiática 2' then
+                y = 2
+                return y
+            elseif x == 'Influência Midiática 3' then
+                y = 3
+                return y
+            elseif x == 'Influência Midiática 4' then
+                y = 4
+                return y
+            elseif x == 'Influência Midiática 5' then
+                y = 5
+                return y
+            elseif x == 'Infravisão' then
+                y = 1
+                return y
+            elseif x == 'Iniciativa Aprimorada' then
+                y = 1
+                return y
+            elseif x == 'Medicina' then
+                y = 2
+                return y
+            elseif x == 'Patrono' then
+                y = 2
+                return y
+            elseif x == 'Pechincheiro' then
+                y = 2
+                return y
+            elseif x == 'Pontos de HP Extras' then
+                y = 1
+                return y
+            elseif x == 'Pontos de Mana Extras' then
+                y = 1
+                return y
+            elseif x == 'Precognição' then
+                y = 2
+                return y
+            elseif x == 'Resistência a Dor' then
+                y = 3 
+                return y
+            elseif x == 'Sentidos Aguçados (Visão)' then
+                y = 1
+                return y
+            elseif x == 'Sentidos Aguçados (Tato)' then
+                y = 1
+                return y
+            elseif x == 'Sentidos Aguçados (Olfato)' then
+                y = 1
+                return y
+            elseif x == 'Sentidos Aguçados (Paladar)' then
+                y = 1
+                return y
+            elseif x == 'Sentidos Aguçados (Audição)' then
+                y = 1
+                return y
+            elseif x == 'Sortudo 1' then
+                y = 2
+                return y
+            elseif x == 'Sortudo 2' then
+                y = 3
+                return y
+            elseif x == 'Torcida' then
+                y = 1
+                return y
+            elseif x == 'Visão Noturna' then
+                y = 2
+                return y
+            elseif x == 'N/A' then
+                y = 0
+                return 0    
+            end
+        end
+
+        sheet.custoVant = gerarCustoVant(sheet.nomeVant)
+        sheet.custoVant2 = gerarCustoVant(sheet.nomeVant2)    
+        sheet.custoVant3 = gerarCustoVant(sheet.nomeVant3)
+        sheet.custoVant4 = gerarCustoVant(sheet.nomeVant4)
+        sheet.custoVant5 = gerarCustoVant(sheet.nomeVant5)
+        sheet.custoVant6 = gerarCustoVant(sheet.nomeVant6)
+        sheet.custoVant7 = gerarCustoVant(sheet.nomeVant7)
+        sheet.custoVant8 = gerarCustoVant(sheet.nomeVant8)
+        sheet.custoVant9 = gerarCustoVant(sheet.nomeVant9)
+        sheet.custoVant10 = gerarCustoVant(sheet.nomeVant10)
+
+    </event>
+</dataLink>
+
+
+
+<!-- Função Contar Ponto Vantagem -->
+<dataLink fields="{'custoVant','custoVant2','custoVant3','custoVant4','custoVant5','custoVant6',
+    'custoVant7','custoVant8','custoVant9','custoVant10','TotalVant'}">
+    <event name="onChange">
+        local CI = (tonumber(sheet.custoVant) or 0)
+        local CII = (tonumber(sheet.custoVant2) or 0)
+        local CIII = (tonumber(sheet.custoVant3) or 0)
+        local CIV = (tonumber(sheet.custoVant4) or 0)
+        local CV = (tonumber(sheet.custoVant5) or 0)
+        local CVI = (tonumber(sheet.custoVant6) or 0)
+        local CVII = (tonumber(sheet.custoVant7) or 0)
+        local CVIII = (tonumber(sheet.custoVant8) or 0)
+        local CIX = (tonumber(sheet.custoVant9) or 0)
+        local CX = (tonumber(sheet.custoVant9) or 0)
+
+        TotalVant = CI+CII+CIII+CIV+CV+CVI+CVII+CVIII+CIX+CX
+        if TotalVant > 6 then
+            sheet.TotalVant = 'Irregular'
+        else
+            sheet.TotalVant = 'OK !'
+        end
+
+    </event>
+</dataLink>    
+
+
+<!--Função Gerar descrição desvantagem -->
+<dataLink fields="{'nomeDesvant','nomeDesvant2','nomeDesvant3','nomeDesvant4','nomeDesvant5','nomeDesvant6','nomeDesvant7',
+    'nomeDesvant8','nomeDesvant9','nomeDesvant10','descricaoDesvant','descricaoDesvant2','descricaoDesvant3',
+    'descricaoDesvant4','descricaoDesvant5','descricaoDesvant6','descricaoDesvant7','descricaoDesvant8','descricaoDesvant9','descricaoDesvant10'}">
+    <event name="onChange">
+        local DI = sheet.nomeDesvant
+        local DII = sheet.nomeDesvant2
+        local DIII = sheet.nomeDesvant3
+        local DIV = sheet.nomeDesvant4
+        local DV = sheet.nomeDesvant5
+        local DVI = sheet.nomeDesvant6
+        local DVII = sheet.nomeDesvant7
+        local DVIII = sheet.nomeDesvant8
+        local DIX = sheet.nomeDesvant9
+        local DX = sheet.nomeDesvant10
+        
+        function gerarDescricaoDesvant(x) 
+            if x == 'Alergia' then
+                y = 'O Personagem é alérgico a alguma coisa (poeira, pêlo de animais, certos perfumes).'
+                return y
+            elseif x == 'Alcoólotra' then
+                y = 'O personagem é viciado em álcool, ou uma bebida especifica.' 
+                return y
+            elseif x == 'Andrógino' then
+                y = 'O Personagem tem a aparência física parecida com os traços do sexo oposto.' 
+                return y
+            elseif  x == 'Aparência Trocada' then   
+                y = 'O Personagem é incrivelmente idêntico a uma outra pessoa.'
+                return y
+            elseif  x == 'Azarado' then   
+                y = 'Em um momento da sessão, o jogador pode ter falha critica automática.' 
+                return y
+            elseif  x == 'Casto' then   
+                y = 'O Personagem fez um voto de castidade, negando a si mesmo os prazeres carnais.'
+                return y
+            elseif  x == 'Cleptomaníaco' then   
+                y = 'Seu personagem PRECISA roubar alguma coisa de todos os lugares que visita.'
+                return y
+            elseif  x == 'Código dos Cavalheiros' then   
+                y = 'Impede o personagem de atacar mulheres ou fêmeas de qualquer espécie.'
+                return y 
+            elseif  x == 'Código de Combate' then   
+                y = 'Faz o personagem nunca pode usar vantagens, além das capacidades próprias.'
+                return y
+            elseif  x == 'Código do Caçador' then   
+                y = 'Nunca pode abandonar uma caça abatida ou matar indefesos de qualquer espécie.'
+                return y   
+            elseif  x == 'Código dos Herois' then   
+                y = 'Sempre cumprirá sua palavra e ajudará qualquer um que precisa de você.'
+                return y
+            elseif  x == 'Compulsão' then   
+                y = 'O personagem sente uma necessidade incontrolável de fazer uma certa tarefa.'
+                return y    
+            elseif  x == 'Complexo de Culpa' then   
+                y = 'Você se sente terrivelmente culpado por alguma coisa que fez no passado.'
+                return y
+            elseif x == 'Complexo de Inferioridade' then   
+                y = 'O Personagem se sente inferior aos outros, fugindo do racional.'
+                return y    
+            elseif x == 'Coração Mole' then   
+                y = 'O seu Personagem é muito sentimental e não é capaz de ver ninguém sofrer.'
+                return y    
+            elseif x == 'Coração de Gado' then
+                y = 'O seu personagem é um escravoceta/ escravopinto.'
+                return y     
+            elseif x == 'Covarde' then
+                y = 'Seu personagem é medroso/temoroso demais pela sua vida.'
+                return y
+            elseif x == 'Crédulo' then
+                y = 'O personagem é uma pessoa extremamente ingênua.'
+                return y
+            elseif x == 'Curioso' then
+                y = 'Sua curiosidade é muito maior que o seu juízo.'
+                return y
+            elseif x == 'Deficiente Físico 1' then
+                y = 'Você possui uma deficiência pequena, como ser cego de um olho.'
+                return y 
+            elseif x == 'Deficiente Físico 2' then
+                y = 'Sua deficiência é um pouco mais grave, podendo ser completamente cego.'
+                return y 
+            elseif x == 'Deficiente Físico 3' then
+                y ='Sua deficiência é grave e prejudica muito sua vida. Você pode ser um paraplégico.'
+                return y
+            elseif x == 'Dificuldade de Fala' then
+                y ='O personagem é gago, fanho, ou qualquer outro problemas de dicção.'
+                return y
+            elseif x == 'Distração' then
+                y = 'O personagem não consegue se concentrar em nada, vivendo no mundo das nuvens.'
+                return y
+            elseif x == 'Dupla Personalidade' then
+                y = 'O Personagem possui duas personalidades diferentes habitando o mesmo corpo.'
+                return y
+            elseif x == 'Estigma Social' then
+                y = 'Por algum motivo o personagem é considerado um pária da sociedade.'
+                return y
+            elseif x == 'Esquizofrênico' then
+                y = 'O personagem tem pensamentos ou experiências não reais.'
+                return y
+            elseif x == 'Família ou Mentor Desonrado' then
+                y = 'Seus descendentes ou seu mestre cometeram crimes terríveis, e você sofre por isso.'
+                return y
+            elseif x == 'Fanático' then
+                y = 'Sua vida é devotada a algum objetivo específico.'
+                return y
+            elseif x == 'Fanfarrão' then
+                y = ' O personagem é um trovador. Sempre está contando vantagem de si mesmo.'
+                return y
+            elseif x == 'Fobia 1' then
+                y = 'Quando se vê tem contato com seu medo, o pânico toma a sua mente.'
+                return y
+            elseif x == 'Fobia 2' then
+                y = 'Idêntico ao anterior, mas aqui você sente um pavor indescritível por algo.'
+                return y
+            elseif x == 'Fúria' then
+                y = 'O Personagem perde a noção dos seus atos, atacando inconscientemente TODOS.'
+                return y
+            elseif x == 'Ganância' then
+                y = 'A fraqueza dos homens. O personagem quer fazer de tudo para poder ter mais.'
+                return y
+            elseif x == 'Gula' then
+                y = 'O apetite do personagem é algo fora dos padrões normais.'
+                return y
+            elseif x == 'Hábitos Detestáveis' then
+                y = 'Você possui alguns atos involuntários que chocam e enojam as pessoas.'
+                return y
+            elseif x == 'Hipocondria' then
+                y = 'O personagem acredita fervorosamente que está doente.'
+                return y
+            elseif x == 'Inimigo' then
+                y = 'O personagem tem rixa com alguém, e este o quer morto por algum motivo.'
+                return y
+            elseif x == 'Intolerância' then
+                y = 'Existe algo que você não tolera, seja uma situação, um animal, ou alguma coisa. '
+                return y
+            elseif x == 'Má Fama 1' then
+                y = 'Os crimes do personagem são lembrados em alguns bairros, uma cidade pequena.'
+                return y
+            elseif x == 'Má Fama 2' then
+                y = 'Os crimes do personagem são lembrados em algumas vilas, e uma metrópole.'
+                return y
+            elseif x == 'Má Fama 3' then
+                y = 'Os crimes do personagem são lembrados em algumas metrópoles, um estado '
+                return y
+            elseif x == 'Maldição 1' then
+                y = 'Um pequeno infortúnio atrapalhada a vida do personagem em alguns momentos.'
+                return y
+            elseif x == 'Maldição 2' then
+                y = 'Uma maldição que afeta constantemente a vida do personagem.'
+                return y
+            elseif x == 'Maldição 3' then
+                y = 'O Personagem recebeu uma punição severa, seus efeitos são devastadores.'
+                return y
+            elseif x == 'Mania' then
+                y = 'O personagem tem algum tipo de mania, é um hábito, um modus operandi.'
+                return y
+            elseif x == 'Maníaco Depressivo' then
+                y = 'O personagem sofre mudanças drásticas de humor. '
+                return y    
+            elseif x == 'Marca do Predador' then
+                y = 'Os animais te reconhecem como uma ameaça, fugindo ao sentir sua aproximação.'
+                return y
+            elseif x == 'Megalomaníaco' then
+                y = 'Você não se considera mais uma pessoa, e sim um deus! Sua ambição é o poder total.'
+                return y
+            elseif x == 'Mentiroso Compulsivo' then
+                y = 'O personagem mente por prazer e compulsão.'
+                return y
+            elseif x == 'Monstruoso' then
+                y = 'A aparência física do Personagem é hedionda. Causando espanto ao verem.'
+                return y
+            elseif x == 'Pacifista 1' then
+                y = 'O personagem sempre deixa os inimigos fugirem após o combate.'
+                return y
+            elseif x == 'Pacifista 2' then
+                y = 'O personagem só irá lutar se for a última saída.'
+                return y
+            elseif x == 'Pacifista 3' then
+                y = 'O personagem jamais luta. Pode defender-se dos golpes dos oponentes.'
+                return y
+            elseif x == 'Paranoia 1' then
+                y = 'O Personagem acredita fervorosamente que eles estão atrás dele, mas não estão.'
+                return y
+            elseif x == 'Paranoia 2' then
+                y = 'Igual ao anterior, mas nesse caso ele realmente está sendo perseguido por alguém.'
+                return y
+            elseif x == 'Perda Terrível' then
+                y = 'O personagem perdeu alguém que amava muito e isso o afetou.'
+                return y
+            elseif x == 'Protegido Indefeso' then
+                y = 'Quando é alguém indefeso a quem o Personagem jurou defender.'
+                return y
+            elseif x == 'Pesadelos' then
+                y = 'O sono do Personagem é freqüentemente afetado por pesadelos indescritíveis.'
+                return y
+            elseif x == 'Sanguinário' then
+                y = 'Quando o personagem entra em uma batalha, esta será até o fim.'
+                return y
+            elseif x == 'Sarcasmo' then
+                y = 'O personagem é extremamente sarcástico (irônico), sendo inconveniente.'
+                return y
+            elseif x == 'Sono Pesado' then
+                y = 'O personagem dorme como uma pedra, ficando completamente fora de prontidão.'
+                return y
+            elseif x == 'Supersticioso' then
+                y = 'Acredita em todo tipo de superstição. Carrega pés-de-coelho e outros talismãs.'
+                return y
+            elseif x == 'Suspeito 1' then
+                y = 'Tudo o que acontece as pessoas acham que o responsável foi você.'
+                return y
+            elseif x == 'Suspeito 2' then
+                y = 'O personagem realmente inspira medo nas pessoas. Elas não confiam em você.'
+                return y
+            elseif x == 'Teimosia' then
+                y = 'Você é teimoso como uma mula. Não importa o que os outros digam.'
+                return y
+            elseif x == 'Timidez' then 
+                y = 'O Personagem receia ao falar e até se aproximar de outras pessoas.'
+                return y
+            elseif x == 'Traumatizado' then
+                y = 'Este personagem sofreu um severo trauma durante a infância.'
+                return y
+            elseif x == 'Viciado em Jogos' then
+                y = 'Seu personagem perde muito dinheiro em jogos de azar.'
+                return y 
+            elseif x == 'Visão Monocromática' then
+                y = 'Seu personagem enxerga apenas em preto, branco e tons de cinza.'
+                return y
+            elseif x == 'Vontade Fraca' then
+                y = 'O Personagem é extremamente suscetível à desistência e passividade.'
+                return y
+            else
+                y = 'N/A'
+                return y
+            end
+        end
+        
+        sheet.descricaoDesvant = gerarDescricaoDesvant(DI)
+        sheet.descricaoDesvant2 = gerarDescricaoDesvant(DII)
+        sheet.descricaoDesvant3 = gerarDescricaoDesvant(DIII)
+        sheet.descricaoDesvant4 = gerarDescricaoDesvant(DIV)
+        sheet.descricaoDesvant5 = gerarDescricaoDesvant(DV)
+        sheet.descricaoDesvant6 = gerarDescricaoDesvant(DVI)
+        sheet.descricaoDesvant7 = gerarDescricaoDesvant(DVII)
+        sheet.descricaoDesvant8 = gerarDescricaoDesvant(DVIII)
+        sheet.descricaoDesvant9 = gerarDescricaoDesvant(DIX)
+        sheet.descricaoDesvant10 = gerarDescricaoDesvant(DX)
+     </event>   
+</dataLink>
+
+<!-- Contar Custo Desvantagens -->
+<dataLink fields="{'nomeDesvant','nomeDesvant2','nomeDesvant3','nomeDesvant4','nomeDesvant5','nomeDesvant6','nomeDesvant7',
+    'nomeDesvant8','nomeDesvant9','nomeDesvant10','custoDesvant','custoDesvant2','custoDesvant3','custoDesvant4',
+    'custoDesvant5','custoDesvant6','custoDesvant7','custoDesvant8','custoDesvant9','custoDesvant10'}">
+    <event name="onChange">
+        
+        function gerarCustoDesvant(x) 
+            if x == 'Alergia' then
+                y = -1
+                return y
+            elseif x == 'Alcoólotra' then
+                y = -1 
+                return y
+            elseif x == 'Andrógino' then
+                y = -1 
+                return y
+            elseif  x == 'Aparência Trocada' then   
+                y = -1
+                return y
+            elseif  x == 'Azarado' then   
+                y = -1 
+                return y
+            elseif  x == 'Casto' then   
+                y = -1
+                return y
+            elseif  x == 'Cleptomaníaco' then   
+                y = -2
+                return y
+            elseif  x == 'Código dos Cavalheiros' then   
+                y = -1
+                return y 
+            elseif  x == 'Código de Combate' then   
+                y = -1
+                return y
+            elseif  x == 'Código do Caçador' then   
+                y = -1
+                return y   
+            elseif  x == 'Código dos Herois' then   
+                y = -1
+                return y
+            elseif  x == 'Compulsão' then   
+                y = -1
+                return y    
+            elseif  x == 'Complexo de Culpa' then   
+                y = -1
+                return y
+            elseif x == 'Complexo de Inferioridade' then   
+                y = -1
+                return y    
+            elseif x == 'Coração Mole' then   
+                y = -1
+                return y    
+            elseif x == 'Coração de Gado' then
+                y = -1
+                return y     
+            elseif x == 'Covarde' then
+                y = -1
+                return y
+            elseif x == 'Crédulo' then
+                y = -1
+                return y
+            elseif x == 'Curioso' then
+                y = -1
+                return y
+            elseif x == 'Deficiente Físico 1' then
+                y = -1
+                return y 
+            elseif x == 'Deficiente Físico 2' then
+                y = -2
+                return y 
+            elseif x == 'Deficiente Físico 3' then
+                y = -3
+                return y
+            elseif x == 'Dificuldade de Fala' then
+                y = -1
+                return y
+            elseif x == 'Distração' then
+                y = -2
+                return y
+            elseif x == 'Dupla Personalidade' then
+                y = -3
+                return y
+            elseif x == 'Estigma Social' then
+                y = -1
+                return y
+            elseif x == 'Esquizofrênico' then
+                y = -2
+                return y
+            elseif x == 'Família ou Mentor Desonrado' then
+                y = -1 
+                return y
+            elseif x == 'Fanático' then
+                y = -2
+                return y
+            elseif x == 'Fanfarrão' then
+                y = -1
+                return y
+            elseif x == 'Fobia 1' then
+                y = -1
+                return y
+            elseif x == 'Fobia 2' then
+                y = -2
+                return y
+            elseif x == 'Fúria' then
+                y = -2
+                return y
+            elseif x == 'Ganância' then
+                y = -3
+                return y
+            elseif x == 'Gula' then
+                y = -1
+                return y
+            elseif x == 'Hábitos Detestáveis' then
+                y = -1
+                return y
+            elseif x == 'Hipocondria' then
+                y = -1
+                return y
+            elseif x == 'Inimigo' then
+                y = -1
+                return y
+            elseif x == 'Intolerância' then
+                y = -1
+                return y
+            elseif x == 'Má Fama 1' then
+                y = -1
+                return y
+            elseif x == 'Má Fama 2' then
+                y = -2
+                return y
+            elseif x == 'Má Fama 3' then
+                y = -3
+                return y
+            elseif x == 'Maldição 1' then
+                y = -1
+                return y
+            elseif x == 'Maldição 2' then
+                y = -2
+                return y
+            elseif x == 'Maldição 3' then
+                y = -3
+                return y
+            elseif x == 'Mania' then
+                y = -1
+                return y
+            elseif x == 'Maníaco Depressivo' then
+                y = -3
+                return y    
+            elseif x == 'Marca do Predador' then
+                y = -1
+                return y
+            elseif x == 'Megalomaníaco' then
+                y = -1
+                return y
+            elseif x == 'Mentiroso Compulsivo' then
+                y = -2
+                return y
+            elseif x == 'Monstruoso' then
+                y = -1
+                return y
+            elseif x == 'Pacifista 1' then
+                y = -1
+                return y
+            elseif x == 'Pacifista 2' then
+                y = -2
+                return y
+            elseif x == 'Pacifista 3' then
+                y = -3
+                return y
+            elseif x == 'Paranoia 1' then
+                y = -1
+                return y
+            elseif x == 'Paranoia 2' then
+                y = -2
+                return y
+            elseif x == 'Perda Terrível' then
+                y = -1
+                return y
+            elseif x == 'Protegido Indefeso' then
+                y = -1
+                return y
+            elseif x == 'Pesadelos' then
+                y =-1
+                return y
+            elseif x == 'Sanguinário' then
+                y = -2
+                return y
+            elseif x == 'Sarcasmo' then
+                y = -1
+                return y
+            elseif x == 'Sono Pesado' then
+                y = -1
+                return y
+            elseif x == 'Supersticioso' then
+                y = -1
+                return y
+            elseif x == 'Suspeito 1' then
+                y = -1
+                return y
+            elseif x == 'Suspeito 2' then
+                y = -2
+                return y
+            elseif x == 'Teimosia' then
+                y = -1
+                return y
+            elseif x == 'Timidez' then 
+                y = -1
+                return y
+            elseif x == 'Traumatizado' then
+                y = -2
+                return y
+            elseif x == 'Viciado em Jogos' then
+                y = -1
+                return y 
+            elseif x == 'Visão Monocromática' then
+                y = -1
+                return y
+            elseif x == 'Vontade Fraca' then
+                y = -1
+                return y
+            else
+                y = '0'
+                return y
+            end
+        end
+
+        sheet.custoDesvant = gerarCustoDesvant(sheet.nomeDesvant)
+        sheet.custoDesvant2 = gerarCustoDesvant(sheet.nomeDesvant2)    
+        sheet.custoDesvant3 = gerarCustoDesvant(sheet.nomeDesvant3)
+        sheet.custoDesvant4 = gerarCustoDesvant(sheet.nomeDesvant4)
+        sheet.custoDesvant5 = gerarCustoDesvant(sheet.nomeDesvant5)
+        sheet.custoDesvant6 = gerarCustoDesvant(sheet.nomeDesvant6)
+        sheet.custoDesvant7 = gerarCustoDesvant(sheet.nomeDesvant7)
+        sheet.custoDesvant8 = gerarCustoDesvant(sheet.nomeDesvant8)
+        sheet.custoDesvant9 = gerarCustoDesvant(sheet.nomeDesvant9)
+        sheet.custoDesvant10 = gerarCustoDesvant(sheet.nomeDesvant10)
+
+    </event>    
+</dataLink>
+
+
+
+<!-- Função Contar Ponto Desvantagem -->
+<dataLink fields="{'custoDesvant','custoDesvant2','custoDesvant3','custoDesvant4','custoDesvant5','custoDesvant6',
+    'custoDesvant7','custoDesvant8','custoDesvant9','custoDesvant10','TotalDesvant'}">
+    <event name="onChange">
+        local CDI = (tonumber(sheet.custoDesvant) or 0)
+        local CDII = (tonumber(sheet.custoDesvant2) or 0)
+        local CDIII = (tonumber(sheet.custoDesvant3) or 0)
+        local CDIV = (tonumber(sheet.custoDesvant4) or 0)
+        local CDV = (tonumber(sheet.custoDesvant5) or 0)
+        local CDVI = (tonumber(sheet.custoDesvant6) or 0)
+        local CDVII = (tonumber(sheet.custoDesvant7) or 0)
+        local CDVIII = (tonumber(sheet.custoDesvant8) or 0)
+        local CDIX = (tonumber(sheet.custoDesvant9) or 0)
+        local CDX = (tonumber(sheet.custoDesvant9) or 0)
+
+        TotalDesvant = (-1)*(CDI+CDII+CDIII+CDIV+CDV+CDVI+CDVII+CDVIII+CDIX+CDX)
+        if TotalDesvant >= 4  then
+            sheet.TotalDesvant = 4
+        else
+            sheet.TotalDesvant = TotalDesvant
+        end
+
+    </event>
+</dataLink>    
+
+
+
+<!-- Função Limitação de Pontos -->
+<dataLink fields="{'level','resfisica','resmagica','destreza','forcafisica','forcamagica','inteligencia','TotalVant', 'TotalDesvant','bcaf','bcam'}">
+             <event name="onChange">
+               LVL = (tonumber(sheet.level) or 0)	
+               RF = (tonumber(sheet.resfisica) or 0)
+               RM = (tonumber(sheet.resmagica) or 0)
+               DES = (tonumber(sheet.destreza) or 0)
+               FF = (tonumber(sheet.forcafisica) or 0)
+               FM = (tonumber(sheet.forcamagica) or 0)
+               INT = (tonumber(sheet.inteligencia) or 0)
+               DESVANT = (tonumber(sheet.TotalDesvant) or 0)
+               CAF = (tonumber(sheet.bcaf) or 0)
+               CAM = (tonumber(sheet.bcam) or 0)
+
+               funcao = function(x,y)
+               		Z = (tonumber(x) or 0)
+               		W = (tonumber(y) or 0)
+               		if 6>Z then
+               			return W
+               		elseif 11 > Z then
+               			Z = Z +(W-5)
+        				return Z
+        			elseif 16 > Z then
+        				Z = Z + ((2*(W-5))-5)
+        				return Z
+        			end		
+        		end
+        			
+        	   RF = funcao((tonumber(sheet.resfisica) or 0),(tonumber(sheet.resfisica) or 0))
+        	   RM = funcao((tonumber(sheet.resmagica) or 0),(tonumber(sheet.resmagica) or 0))
+        	   DES = funcao((tonumber(sheet.destreza) or 0),(tonumber(sheet.destreza) or 0))
+        	   FF = funcao((tonumber(sheet.forcafisica) or 0),(tonumber(sheet.forcafisica) or 0))
+        	   FM = funcao((tonumber(sheet.forcamagica) or 0),(tonumber(sheet.forcamagica) or 0))
+        	   INT = funcao((tonumber(sheet.inteligencia) or 0),(tonumber(sheet.inteligencia) or 0))
+
+               function constante(x)
+                    if x == '1/8' then
+                       y = 2 
+                       return y
+                    elseif x == '1/4' then
+                        y = 4
+                        return y
+                    elseif x == '1/3' then
+                        y = 6
+                        return y
+                    elseif x == '1/2' then
+                        y = 9
+                        return y
+                    elseif (tonumber(x)) >= 1 then
+                        x = tonumber(x)
+                        conta = 18 + (x-1)
+                        return conta
+                    else
+                        return 0
+                    end
+                end 
+               
+               local const = constante(sheet.level)
+
+            
+               local PTOS = const + DESVANT - (RF + RM + DES + FF + FM + INT + CAF + CAM)
+ 
+               if 0 > PTOS then
+               		sheet.ptos = 'Irregular'
+               else
+                   sheet.ptos = PTOS 
+               end
+
+              </event>
+</dataLink> 
+
+<!--Função Efeito -->
+<dataLink fields="{'effect','effect2','effect3','effect4','effect5','effect6','effect7','effect8','effect9','effect10',
+    'effect11','effect12','effect13','effect14','tipoefeito','tipoefeito2','tipoefeito3','tipoefeito4','tipoefeito5',
+    'tipoefeito6','tipoefeito7','tipoefeito8','tipoefeito9','tipoefeito10','tipoefeito11','tipoefeito12','tipoefeito13',
+    'tipoefeito14','resfisica','resmagica','destreza','forcafisica','forcamagica','inteligencia','level','bonusRM',
+    'bonusINT','bonusRF','bonusDES','bonusFM','bonusFF'}">
+             <event name="onChange">
+                     		             	 
+           		TI = sheet.tipoefeito 
+                TII = sheet.tipoefeito2
+                TIII = sheet.tipoefeito3
+                TIV = sheet.tipoefeito4
+                TV = sheet.tipoefeito5
+                TVI =sheet.tipoefeito6
+                TVII = sheet.tipoefeito7
+                TVIII = sheet.tipoefeito8
+                TIX = sheet.tipoefeito9
+                TX = sheet.tipoefeito10
+                TXI = sheet.tipoefeito11
+                TXII = sheet.tipoefeito12
+                TXIII = sheet.tipoefeito13
+                TXIV = sheet.tipoefeito14
+
+                
+              local RF = (tonumber(sheet.resfisica) or 0) + (tonumber(sheet.bonusRF) or 0)
+              local RM = (tonumber(sheet.resmagica) or 0) + (tonumber(sheet.bonusRM) or 0)
+              local DES = (tonumber(sheet.destreza) or 0) + (tonumber(sheet.bonusDES) or 0)
+              local FF = (tonumber(sheet.forcafisica) or 0) + (tonumber(sheet.bonusFF) or 0)
+              local FM = (tonumber(sheet.forcamagica) or 0) + (tonumber(sheet.bonusFM) or 0)
+              local INT = (tonumber(sheet.inteligencia) or 0) + (tonumber(sheet.bonusINT) or 0)
+
+				 local disparoMagico = math.floor(FM + INT)
+				 local manipulacao = math.floor(FM + INT)
+				 local golpeMarcialMagico = math.floor(FF + FM)
+				 local reforcoMagico = math.floor(INT + RM)
+				 local criacao = math.floor(INT + FM)
+				 local slow = math.floor(FM + INT + 10)
+				 local atordoamento = math.floor(INT + FM + 10) 
+				 local paralisia = math.floor(INT + FM +10)
+				 local transform = math.floor((RF+RM+DES+FF+FM+INT)/6)
+                 local vampirismo = math.floor(FM + INT)
+	             local cura = math.floor(FM + INT)
+	             local dispmagArea = math.floor(FM + INT)
+                 local cegueira = math.floor((FM + INT)/2)
+				
+
+                function GerarEfeito(x)
+                    if x == 'Atordoamento' then
+                        y = string.format('Terá dificuldade '..atordoamento..' no teste de resistência física do alvo.')
+                        return y
+                    elseif x == 'Cegueira' then
+                        y = string.format('Causa cegueira no alvo, gerando -'..cegueira..' em todos os testes.')
+                        return y
+                    elseif x == 'Criação e Sustentação' then
+                        y = string.format('Toda criação causará +'..criacao..' no teste de atk e/ou def.')
+                        return y
+                    elseif x == 'Cura' then
+                        y = string.format('Curará '..cura..' de HP no alvo.')
+                        return y
+                    elseif x == 'Disparo Mágico' then
+                        y = string.format('Adicionará +'..disparoMagico..' no teste de Dano no alvo.')
+                        return y
+                    elseif x == 'Disparo Mágico em Área' then
+                        y = string.format('Adicionará +'..dispmagArea..' no teste de Dano em todos os alvos.')
+                        return y
+                    elseif x == 'Golpe Marcial Elemental' then
+                        y = string.format('Adicionará +'..golpeMarcialMagico..' no teste de Dano.')
+                        return y
+                    elseif x == 'Manipulação' then
+                        y = string.format('Será adicionado ou removido '..manipulacao..' em dificuldade nos rolls. ')
+                        return y 
+                    elseif x == 'Paralisia' then
+                        y = string.format('Terá dificuldade '..paralisia..' no teste de RM.')
+                        return y    
+                     elseif x == 'Reforço Mágico' then
+                        y = string.format('Adicionará +'..reforcoMagico..' na CAM e/ ou CAF.')
+                        return y
+                    elseif x == 'Slow' then
+                        y = string.format(slow..' de dificuldade no roll de RF, caso falhe, -'..FM+INT..' nos testes')
+                        return y
+                    elseif x == 'Transformação' then
+                        y = string.format('+'..transform..' em qualquer teste de acordo com o mestre')
+                        return y            
+                    elseif x == 'Vampirismo' then
+                        y = string.format('Adicionará +'..vampirismo..' no teste de Dano no alvo.')
+                        return y
+                    elseif x == 'N/A' then
+                        y = 'N/A'
+                        return y
+                    end    
+                end
+                sheet.effect = GerarEfeito(TI)
+                sheet.effect2 = GerarEfeito(TII)
+                sheet.effect3 = 'Disponível apenas no Level 3'
+                sheet.effect4 = 'Disponível apenas no Level 6'
+                sheet.effect5 = 'Disponível apenas no Level 9' 
+                sheet.effect6 = 'Disponível apenas no Level 12'
+                sheet.effect7 = 'Disponível apenas no Level 15'
+                sheet.effect8 = 'Disponível apenas no Level 18'
+                sheet.effect9 = 'Disponível apenas no Level 21'
+                sheet.effect10 = 'Disponível apenas no Level 24'
+                sheet.effect11 = 'Disponível apenas no Level 27'
+                sheet.effect12 = 'Disponível apenas no Level 30'
+                sheet.effect13 = 'Disponível apenas no Level 33'
+                sheet.effect14 = 'Disponível apenas no Level 36'
+                if (tonumber(sheet.level) or 0) >= 3 then
+                    sheet.effect3 = GerarEfeito(TIII)
+                    if (tonumber(sheet.level) or 0) >= 6 then
+                        sheet.effect4 = GerarEfeito(TIV)
+                        if (tonumber(sheet.level) or 0) >= 9 then
+                            sheet.effect5 = GerarEfeito(TV)
+                            if (tonumber(sheet.level) or 0) >= 12 then
+                                sheet.effect6 = GerarEfeito(TVI)
+                                if (tonumber(sheet.level) or 0) >= 15 then
+                                    sheet.effect7 = GerarEfeito(TVII)
+                                    if (tonumber(sheet.level) or 0) >= 18 then
+                                        sheet.effect8 = GerarEfeito(TVIII)
+                                        if (tonumber(sheet.level) or 0) >= 21 then
+                                            sheet.effect9 = GerarEfeito(TIX)
+                                            if (tonumber(sheet.level) or 0) >= 24 then
+                                                sheet.effect10 = GerarEfeito(TX)
+                                                if (tonumber(sheet.level) or 0) >= 27 then
+                                                    sheet.effect11 = GerarEfeito(TXI)
+                                                    if (tonumber(sheet.level) or 0) >= 30 then
+                                                        sheet.effect12 = GerarEfeito(TXII)
+                                                        if (tonumber(sheet.level) or 0) >= 33 then
+                                                            sheet.effect13 = GerarEfeito(TXIII)
+                                                            if (tonumber(sheet.level) or 0) >= 36 then
+                                                                sheet.effect14 = GerarEfeito(TXIV)
+                                                            end    
+                                                        end    
+                                                    end        
+                                                end    
+                                            end    
+                                        end        
+                                    end        
+                                end
+                            end
+                        end
+                    end        
+                end
+             </event>
+</dataLink> 
+<!-- Função Custo de Magia -->
+<dataLink fields="{'customagia','inteligencia','forcamagica','resmagica','bonusRM','bonusINT','bonusFM'}">
+             <event name="onChange">
+             local int = (tonumber(sheet.inteligencia) or 0) + (tonumber(sheet.bonusINT) or 0)
+             local fm = (tonumber(sheet.forcamagica) or 0) + (tonumber(sheet.bonusFM) or 0)
+             local rm = (tonumber(sheet.resmagica) or 0)  + (tonumber(sheet.bonusRM) or 0)
+             local mana = rm*10
+             local custoMagia = (mana-int)/((mana+fm)/10)
+             sheet.customagia = math.floor(custoMagia)
+             </event>
+</dataLink> 
+
+<!-- Função Duração -->
+<dataLink fields="{'tipoefeito','tipoefeito2','tipoefeito3','tipoefeito4','tipoefeito5','tipoefeito6','tipoefeito7',
+    'tipoefeito8','tipoefeito9','tipoefeito10','tipoefeito11','tipoefeito12','tipoefeito13','tipoefeito14','resfisica',
+    'resmagica','destreza','forcafisica','forcamagica','inteligencia','level','bonusRM','bonusINT','bonusRF','bonusDES',
+    'bonusFM','bonusFF','duracao','duracao2','duracao3','duracao4','duracao5','duracao6','duracao7',
+    'duracao8','duracao9','duracao10','duracao11','duracao12','duracao13','duracao14'}">
+             <event name="onChange">
+
+               local TI = sheet.tipoefeito 
+               local TII = sheet.tipoefeito2
+               local TIII = sheet.tipoefeito3
+               local TIV = sheet.tipoefeito4
+               local TV = sheet.tipoefeito5
+               local TVI =sheet.tipoefeito6
+               local TVII = sheet.tipoefeito7
+               local TVIII = sheet.tipoefeito8
+               local TIX = sheet.tipoefeito9
+               local TX = sheet.tipoefeito10
+               local TXI = sheet.tipoefeito11
+               local TXII = sheet.tipoefeito12
+               local TXIII = sheet.tipoefeito13
+               local TXIV = sheet.tipoefeito14
+
+               local A = 'Atordoamento'
+               local CEGO = 'Cegueira'
+               local CS = 'Criação e Sustentação'
+               local CURA = 'Cura'
+               local DM = 'Disparo Mágico'
+               local DMA = 'Disparo Mágico em Área'
+               local GME = 'Golpe Marcial Elemental'
+               local M = 'Manipulação'
+               local P = 'Paralisia'
+               local REF = 'Reforço Mágico'
+               local S = 'Slow'
+               local T = 'Transformação'
+               local VAMP = 'Vampirismo'
+               local NA = 'N/A'
+               
+               local RF = (tonumber(sheet.resfisica) or 0) + (tonumber(sheet.bonusRF) or 0)
+               local RM = (tonumber(sheet.resmagica) or 0) + (tonumber(sheet.bonusRM) or 0)
+               local DES = (tonumber(sheet.destreza) or 0) + (tonumber(sheet.bonusDES) or 0)
+               local FF = (tonumber(sheet.forcafisica) or 0) + (tonumber(sheet.bonusFF) or 0)
+               local FM = (tonumber(sheet.forcamagica) or 0) + (tonumber(sheet.bonusFM) or 0)
+               local INT = (tonumber(sheet.inteligencia) or 0) + (tonumber(sheet.bonusINT) or 0)
+
+               function GerarDuracao(x)
+                    if x == DM then 
+                        local y = 'Inst.'
+                        return y
+                    elseif x == DMA then
+                        local y = 'Inst.'
+                        return y
+                    elseif x == VAMP then
+                        local y = 'Inst.'
+                        return y
+                    elseif x == GME then 
+                        local y = 'Inst.'
+                        return y
+                    elseif x == CURA then  
+                        local y = 'P/ turno'
+                        return y
+                    elseif x == REF then 
+                        y = 'P/ Turno'
+                        return y
+                    elseif x == CS then 
+                        y = 'P/ turno'
+                        return y
+                    elseif x == P then
+                        y = string.format(math.floor((INT + FM)/2)..' turnos')
+                        return y
+                    elseif x == A then
+                        y = string.format(math.floor((INT + FM)/2)..' turnos')
+                        return y
+                    elseif x == S then 
+                        y = string.format(math.floor((INT + FM)/2)..' turnos')
+                        return y
+                    elseif x == CEGO then
+                        y = string.format(math.floor((INT + FM)/2)..' turnos')
+                        return y    
+                    elseif x == T then
+                        y = string.format(math.floor((INT + FM + RF + RM + DES + FF)/2)..' turnos')
+                        return y
+                    elseif x == M then
+                        y = string.format(math.floor((INT + FM)/2)..' turnos')
+                        return y
+                    elseif x == NA then
+                        y = 'N/A'
+                        return y
+                     end
+                end
+                sheet.duracao = GerarDuracao(TI)
+                sheet.duracao2 = GerarDuracao(TII)
+                sheet.duracao3= 'N/A'
+                sheet.duracao4 = 'N/A'
+                sheet.duracao5 = 'N/A' 
+                sheet.duracao6 = 'N/A'
+                sheet.duracao7 = 'N/A'
+                sheet.duracao8 = 'N/A'
+                sheet.duracao9 = 'N/A'
+                sheet.duracao10 = 'N/A'
+                sheet.duracao11 = 'N/A'
+                sheet.duracao12 = 'N/A'
+                sheet.duracao13 = 'N/A'
+                sheet.duracao14 = 'N/A'
+                if (tonumber(sheet.level) or 0) >= 3 then
+                    sheet.duracao3 = GerarDuracao(TIII)
+                    if (tonumber(sheet.level) or 0) >= 6 then
+                        sheet.duracao4 = GerarDuracao(TIV)
+                        if (tonumber(sheet.level) or 0) >= 9 then
+                            sheet.duracao5 = GerarDuracao(TV)
+                            if (tonumber(sheet.level) or 0) >= 12 then
+                                sheet.duracao6 = GerarDuracao(TVI)
+                                if (tonumber(sheet.level) or 0) >= 15 then
+                                    sheet.duracao7 = GerarDuracao(TVII)
+                                    if (tonumber(sheet.level) or 0) >= 18 then
+                                        sheet.duracao8 = GerarDuracao(TVIII)
+                                        if (tonumber(sheet.level) or 0) >= 21 then
+                                            sheet.duracao9 = GerarDuracao(TIX)
+                                            if (tonumber(sheet.level) or 0) >= 24 then
+                                                sheet.duracao10 = GerarDuracao(TX)
+                                                if (tonumber(sheet.level) or 0) >= 27 then
+                                                    sheet.duracao11 = GerarDuracao(TXI)
+                                                    if (tonumber(sheet.level) or 0) >= 30 then
+                                                        sheet.duracao12 = GerarDuracao(TXII)
+                                                        if (tonumber(sheet.level) or 0) >= 24 then
+                                                            sheet.duracao13 = GerarDuracao(TXIII)
+                                                            if (tonumber(sheet.level) or 0) >= 24 then
+                                                                sheet.duracao14 = GerarDuracao(TXIV)
+                                                            end    
+                                                        end    
+                                                    end        
+                                                end    
+                                            end    
+                                        end        
+                                    end        
+                                end
+                            end
+                        end
+                    end        
+                end
+            </event>    
+</dataLink>
+
+
+</form>
